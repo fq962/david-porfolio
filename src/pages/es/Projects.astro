@@ -1,12 +1,23 @@
 ---
+import CardCurriculum from "../../components/CardCurriculum.astro";
 import CardProject from "../../components/CardProject.astro";
+
+const imageProject_1 = "../../public/fermodoroPage.png";
+const descrptionProject_1 =
+  "Pomodoro de concentracion, inspirado en web.app desarrollad asdasdad asd asd asd aa con el proposito de concentrarte blaa dasdasdasskldaklsjdadasd. alkdsakldlajda jsldjalksdjlajdla asd asjhdjkahdkjahdkashdkaas dasd ajshdkasdksajhdkasj ada das aksdlka aslkdj al laksjd alsjd alskd lakjs d";
 ---
 
 <section class="flex w-full">
   <div class="flex px-96 mx-20 py-12">
     <div class="flex flex-col gap-5 items-start">
       <span class="text-white font-bold text-3xl">Proyectos</span>
-      <div>
+      <div class="flex flex-col gap-8">
+        <CardCurriculum
+          title="FERMODORO APP"
+          description={descrptionProject_1}
+          siteURL={imageProject_1}
+          technologies={["React", "Tailwind", "Astro"]}
+        />
         <CardProject />
       </div>
     </div>
