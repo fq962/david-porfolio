@@ -3,32 +3,38 @@ interface CardInformation {
   title: string;
   description: string;
   technologies: Technology[];
-  siteURL?: string;
+  project: SiteInfo;
   yearWorked?: string;
 }
 
 interface Technology {
   name: string;
 }
+interface SiteInfo {
+  siteURL?: string;
+  siteImage?: string;
+}
 
 const props = Astro.props as CardInformation;
 
-const { title = "Project Title", description = "Project Description" } = props;
+const {
+  title = "Project Title",
+  description = "Project Description",
+  technologies = [],
+  project,
+  yearWorked,
+} = props;
 ---
 
 <div class="group">
   <div class="relative z-[1000] w-full h-auto mx-auto">
     <div
-      class={props.siteURL
+      class={project.siteURL
         ? "flex gap-8 rounded-lg hover:shadow-md p-4 hover:bg-cardHover"
         : "rounded-lg hover:shadow-md p-4 hover:bg-cardHover"}
     >
       <div class="w-2/3">
-        <img
-          class="rounded-md"
-          src="../../public/fermodoroPage.png"
-          alt="Site Image"
-        />
+        <img class="rounded-md" src={project.siteImage} alt="Site Image" />
       </div>
       <div>
         <span class="flex gap-2">
@@ -62,9 +68,9 @@ const { title = "Project Title", description = "Project Description" } = props;
         </p>
         <div class="flex mt-4">
           {
-            props.technologies.map((tech) => (
+            technologies.map((tech) => (
               <span class="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-                {tech}
+                {tech.name}
               </span>
             ))
           }
