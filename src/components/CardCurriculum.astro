@@ -33,9 +33,17 @@ const {
         ? "flex gap-8 rounded-lg hover:shadow-md p-4 hover:bg-cardHover"
         : "rounded-lg hover:shadow-md p-4 hover:bg-cardHover"}
     >
-      <div class="w-2/3">
-        <img class="rounded-md" src={project.siteImage} alt="Site Image" />
-      </div>
+      {
+        yearWorked ? (
+          <div class="w-96">
+            <span class="text-gray-500 font-medium">{yearWorked}</span>
+          </div>
+        ) : (
+          <div class="w-2/3">
+            <img class="rounded-md" src={project.siteImage} alt="Site Image" />
+          </div>
+        )
+      }
       <div>
         <span class="flex gap-2">
           <h2
