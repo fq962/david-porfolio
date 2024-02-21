@@ -39,8 +39,9 @@ const { title } = Astro.props;
   }
   html {
     font-family: system-ui, sans-serif;
-    background: #252543;
-    background-size: 224px;
+    background: #252543; /* Fallback para navegadores que no soportan degradados */
+    background: linear-gradient(800deg, #1d1d50, #3a1515); /* Degradado */
+    /* background-size: 224px; */
   }
   code {
     font-family:

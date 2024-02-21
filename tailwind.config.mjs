@@ -12,6 +12,13 @@ export default {
         tailwindColor: "#3ebff8",
         linkGreen: "#9DBA96",
       },
+      gridTemplateRows: {
+        // Simple card 3 row grid
+        3: "repeat(3, minmax(1, 1fr))",
+
+        // Complex site-specific row configuration
+        layout: "200px minmax(900px, 1fr) 100px",
+      },
     },
   },
   plugins: [],
