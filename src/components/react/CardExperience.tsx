@@ -43,7 +43,7 @@ export default function CardExperienceComponnent() {
   return (
     <>
       <div
-        className="grid grid-rows-3 hover:shadow-md p-4 rounded-lg hover:bg-cardHover grid-flow-col gap-2 px-5 w-[850px] card relative transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
+        className="grid grid-rows-3 hover:shadow-lg p-4 hover:backdrop-filter hover:backdrop-blur-md hover:bg-opacity-40 rounded-lg hover:bg-cardHover grid-flow-col gap-2 px-5 w-[850px] card relative transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -53,6 +53,7 @@ export default function CardExperienceComponnent() {
       >
         <div className="row-span-3 p-2">
           <span className="text-gray-500 font-medium">2021 - PRESENTE</span>
+          {/* <img className="rounded-md" src="../../../public/fermodoroPage.png" alt="Site Image" /> */}
         </div>
 
         <div className="col-span-2 row-span-1 p-2">
@@ -66,7 +67,10 @@ export default function CardExperienceComponnent() {
             asd asd asd aa con el proposito de concentrarte blaa
             dasdasdasskldaklsjdadasd. alkdsakldlajda jsldjalksdjlajdla asd
             asjhdjkahdkjahdkashdkaas dasd ajshdkasdksajhdkasj ada das aksdlka
-            aslkdj al laksjd alsjd alskd lakjs d
+            aslkdj al laksjd alsjd alskd lakjs d dasskldaklsjdadasd.
+            alkdsakldlajda jsldjalksdjlajdla asd asjhdjkahdkjahdkashdkaas dasd
+            ajshdkasdksajhdkasj ada das aksdlka aslkdj al laksjd alsjd alskd
+            lakjs d
           </p>
         </div>
         <div className="col-span-2 row-span-1 p-2">
