@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import { useState, type MouseEvent, useCallback } from "react";
+import type { CardInterface } from "../../interfaces/CardExpirience.interface";
 
 function throttle<T extends (...args: any[]) => any>(
   func: T,
@@ -17,7 +18,14 @@ function throttle<T extends (...args: any[]) => any>(
   };
 }
 
-export default function CardExperienceComponnent() {
+export const CardExperienceComponnent: React.FC<CardInterface> = ({
+  title,
+  description,
+  yearExperience,
+  pageURL,
+  imageURL,
+  knowledge,
+}) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
   const onMouseMove = useCallback(
@@ -52,41 +60,45 @@ export default function CardExperienceComponnent() {
         }}
       >
         <div className="row-span-3 p-2">
-          <span className="text-gray-500 font-medium">2021 - PRESENTE</span>
+          {imageURL ? (
+            <img
+              className="rounded-md md:w-32 lg:w-48"
+              src={imageURL}
+              alt="Site Image"
+            />
+          ) : (
+            <span className="text-gray-500 font-medium">{yearExperience}</span>
+          )}
+          {/* <span className="text-gray-500 font-medium">{yearExperience}</span> */}
           {/* <img className="rounded-md" src="../../../public/fermodoroPage.png" alt="Site Image" /> */}
         </div>
 
         <div className="col-span-2 row-span-1 p-2">
           <h2 className="font-bold text-xl mb-2 text-white group-hover:text-linkGreen">
-            ALLAS Repuestos
+            {title}
           </h2>
         </div>
         <div className="col-span-2 row-span-1 p-2">
-          <p className="text-gray-400">
-            Pomodoro de concentracion, inspirado en web.app desarrollad asdasdad
-            asd asd asd aa con el proposito de concentrarte blaa
-            dasdasdasskldaklsjdadasd. alkdsakldlajda jsldjalksdjlajdla asd
-            asjhdjkahdkjahdkashdkaas dasd ajshdkasdksajhdkasj ada das aksdlka
-            aslkdj al laksjd alsjd alskd lakjs d dasskldaklsjdadasd.
-            alkdsakldlajda jsldjalksdjlajdla asd asjhdjkahdkjahdkashdkaas dasd
-            ajshdkasdksajhdkasj ada das aksdlka aslkdj al laksjd alsjd alskd
-            lakjs d
-          </p>
+          <p className="text-gray-400">{description}</p>
         </div>
         <div className="col-span-2 row-span-1 p-2">
           <div className="flex">
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              React
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              Astro
-            </span>
-            <span className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300">
-              Tailwind
-            </span>
+            {
+              // eslint-disable-next-line @typescript-eslint/no-unused-vars
+              knowledge?.map((item, index) => {
+                return (
+                  <span
+                    key={index}
+                    className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+                  >
+                    {item}
+                  </span>
+                );
+              })
+            }
           </div>
         </div>
       </div>
     </>
   );
-}
+};

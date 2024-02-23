@@ -1,6 +1,14 @@
 ---
-import CardExperience from "../../components/CardExperience.astro";
-import CardExperienceComponnent from "../../components/react/CardExperience";
+import { CardExperienceComponnent } from "../../components/react/CardExperience";
+
+const description = `Pomodoro de concentracion, inspirado en web.app desarrollad asdasdad
+            asd asd asd aa con el proposito de concentrarte blaa
+            dasdasdasskldaklsjdadasd. alkdsakldlajda jsldjalksdjlajdla asd
+            asjhdjkahdkjahdkashdkaas dasd ajshdkasdksajhdkasj ada das aksdlka
+            aslkdj al laksjd alsjd alskd lakjs d dasskldaklsjdadasd.
+            alkdsakldlajda jsldjalksdjlajdla asd asjhdjkahdkjahdkashdkaas dasd
+            ajshdkasdksajhdkasj ada das aksdlka aslkdj al laksjd alsjd alskd
+            lakjs d.`;
 ---
 
 <section class="flex items-center flex-col justify-center w-full gap-5 pt-14">
@@ -10,9 +18,35 @@ import CardExperienceComponnent from "../../components/react/CardExperience";
       >Experiencia Laboral</label
     >
   </div>
-  <CardExperienceComponnent client:load />
-  <CardExperienceComponnent client:load />
-  <CardExperienceComponnent client:load />
+  <CardExperienceComponnent
+    title="ALLAS Repuestos"
+    description={description}
+    yearExperience="2021 - PRESENTE"
+    knowledge={[
+      "Angular",
+      "TypeScript",
+      "NestJS",
+      "PosgreSQL",
+      "Jenkins",
+      "Flutter",
+      "PM2",
+    ]}
+    client:load
+  />
+  <CardExperienceComponnent
+    title="FREELANCER"
+    description={description}
+    yearExperience="2020 - 2021"
+    knowledge={[
+      "HTML5",
+      "CSS",
+      "Angular",
+      "MySQL",
+      "Wordpress",
+      "Elementor (plugin)",
+    ]}
+    client:load
+  />
   <!-- <div class="flex px-96 mx-20 py-12 lg:px-52">
     <div class="flex flex-col gap-5 items-start w-full">
       <span class="text-white font-bold text-3xl">Experiencia</span>
