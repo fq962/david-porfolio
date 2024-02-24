@@ -51,7 +51,7 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
   return (
     <>
       <div
-        className="grid grid-rows-3 hover:shadow-lg p-4 hover:backdrop-filter hover:backdrop-blur-md hover:bg-opacity-40 rounded-lg hover:bg-cardHover grid-flow-col gap-2 px-5 w-[850px] card relative transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
+        className="grid grid-cols-12 hover:shadow-lg  p-4 hover:backdrop-filter hover:backdrop-blur-md hover:bg-opacity-40 rounded-lg hover:bg-cardHover gap-2 px-5 w-[850px] card relative transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -59,10 +59,10 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
-        <div className="row-span-3 p-2">
+        <div className="col-start-1 col-end-3">
           {imageURL ? (
             <img
-              className="rounded-md md:w-32 lg:w-48"
+              className="rounded-md xl:w-32 lg:w-48"
               src={imageURL}
               alt="Site Image"
             />
@@ -70,32 +70,33 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
             <span className="text-gray-500 font-medium">{yearExperience}</span>
           )}
           {/* <span className="text-gray-500 font-medium">{yearExperience}</span> */}
-          {/* <img className="rounded-md" src="../../../public/fermodoroPage.png" alt="Site Image" /> */}
+          {/* <img className="rounded-xl" src="../../../public/fermodoroPage.png" alt="Site Image" /> */}
         </div>
-
-        <div className="col-span-2 row-span-1 p-2">
-          <h2 className="font-bold text-xl mb-2 text-white group-hover:text-linkGreen">
-            {title}
-          </h2>
-        </div>
-        <div className="col-span-2 row-span-1 p-2">
-          <p className="text-gray-400">{description}</p>
-        </div>
-        <div className="col-span-2 row-span-1 p-2">
-          <div className="flex">
-            {
-              // eslint-disable-next-line @typescript-eslint/no-unused-vars
-              knowledge?.map((item, index) => {
-                return (
-                  <span
-                    key={index}
-                    className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
-                  >
-                    {item}
-                  </span>
-                );
-              })
-            }
+        <div className="col-start-3 col-end-13 flex flex-col xl:pl-3 pl-3">
+          <div className=" ">
+            <h2 className="font-bold text-xl mb-2 text-white group-hover:text-linkGreen">
+              {title}
+            </h2>
+          </div>
+          <div className="pb-5">
+            <p className="text-gray-400">{description}</p>
+          </div>
+          <div className=" ">
+            <div className="flex">
+              {
+                // eslint-disable-next-line @typescript-eslint/no-unused-vars
+                knowledge?.map((item, index) => {
+                  return (
+                    <span
+                      key={index}
+                      className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
+                    >
+                      {item}
+                    </span>
+                  );
+                })
+              }
+            </div>
           </div>
         </div>
       </div>
