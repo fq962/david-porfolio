@@ -5,7 +5,7 @@ import type { CardInterface } from "../../interfaces/CardExpirience.interface";
 
 function throttle<T extends (...args: any[]) => any>(
   func: T,
-  delay: number
+  delay: number,
 ): (...args: Parameters<T>) => void {
   let lastCall = 0;
   return (...args: Parameters<T>) => {
@@ -41,7 +41,7 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
 
       setRotate({ x: rotateX, y: rotateY });
     }, 100),
-    []
+    [],
   );
 
   const onMouseLeave = () => {
@@ -51,7 +51,7 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
   return (
     <>
       <div
-        className="grid grid-cols-12 hover:shadow-lg  p-4 hover:backdrop-filter hover:backdrop-blur-md hover:bg-opacity-40 rounded-lg hover:bg-cardHover gap-2 px-5 w-[850px] card relative transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform"
+        className="card relative grid w-[850px] grid-cols-12 gap-2 rounded-lg p-4 px-5 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform hover:bg-cardHover hover:bg-opacity-40 hover:shadow-lg hover:backdrop-blur-md hover:backdrop-filter"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -62,19 +62,19 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
         <div className="col-start-1 col-end-3">
           {imageURL ? (
             <img
-              className="rounded-md xl:w-32 lg:w-48"
+              className="rounded-md lg:w-48 xl:w-32"
               src={imageURL}
               alt="Site Image"
             />
           ) : (
-            <span className="text-gray-500 font-medium">{yearExperience}</span>
+            <span className="font-medium text-gray-500">{yearExperience}</span>
           )}
           {/* <span className="text-gray-500 font-medium">{yearExperience}</span> */}
           {/* <img className="rounded-xl" src="../../../public/fermodoroPage.png" alt="Site Image" /> */}
         </div>
-        <div className="col-start-3 col-end-13 flex flex-col xl:pl-3 pl-3">
+        <div className="col-start-3 col-end-13 flex flex-col pl-3 xl:pl-3">
           <div className=" ">
-            <h2 className="font-bold text-xl mb-2 text-white group-hover:text-linkGreen">
+            <h2 className="mb-2 text-xl font-bold text-white group-hover:text-linkGreen">
               {title}
             </h2>
           </div>
@@ -83,19 +83,17 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           </div>
           <div className=" ">
             <div className="flex">
-              {
-                // eslint-disable-next-line @typescript-eslint/no-unused-vars
-                knowledge?.map((item, index) => {
-                  return (
-                    <span
-                      key={index}
-                      className="bg-blue-100 text-blue-800 text-sm font-medium me-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300"
-                    >
-                      {item}
-                    </span>
-                  );
-                })
-              }
+              {// eslint-disable-next-line @typescript-eslint/no-unused-vars
+              knowledge?.map((item, index) => {
+                return (
+                  <span
+                    key={index}
+                    className="me-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300"
+                  >
+                    {item}
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>
