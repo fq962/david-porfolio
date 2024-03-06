@@ -51,7 +51,7 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
   return (
     <>
       <div
-        className="card relative grid w-[850px] grid-cols-12 gap-2 rounded-lg p-4 px-5 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform hover:bg-cardHover hover:bg-opacity-40 hover:shadow-lg hover:backdrop-blur-md hover:backdrop-filter"
+        className="card relative grid grid-cols-12 gap-2 rounded-lg p-4 px-5 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform hover:bg-cardHover hover:bg-opacity-40 hover:shadow-lg hover:backdrop-blur-md hover:backdrop-filter sm:w-[750px]"
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
         style={{
@@ -81,8 +81,8 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           <div className="pb-5">
             <p className="text-gray-400">{description}</p>
           </div>
-          <div className=" ">
-            <div className="flex">
+          <div className="">
+            <div className="flex flex-wrap gap-2">
               {// eslint-disable-next-line @typescript-eslint/no-unused-vars
               knowledge?.map((item, index) => {
                 return (
