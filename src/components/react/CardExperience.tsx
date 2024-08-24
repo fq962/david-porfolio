@@ -22,7 +22,7 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
   title,
   description,
   yearExperience,
-  pageURL,
+  // pageURL,
   imageURL,
   knowledge,
 }) => {
