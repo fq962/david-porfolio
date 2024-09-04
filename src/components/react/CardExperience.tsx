@@ -36,7 +36,7 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
       const y = e.clientY - box.top;
       const centerX = box.width / 2;
       const centerY = box.height / 2;
-      const rotateX = (y - centerY) / 4;
+      const rotateX = (y - centerY) / 11;
       const rotateY = (centerX - x) / 25;
 
       setRotate({ x: rotateX, y: rotateY });
