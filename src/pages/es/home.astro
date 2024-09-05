@@ -1,12 +1,12 @@
 ---
-import ButtonDownloadCV from "../../components/react/DownloadCV";
+import { ButtonDownloadCV } from "../../components/react/DownloadCV";
 ---
 
 <section class="flex items-center justify-center w-full pt-14">
   <div class="grid grid-rows-2 grid-flow-col gap-4 w-[850px] px-5">
     <div class="col-span-2 flex flex-col items-start gap-5">
       <span class="text-white font-bold text-3xl">David F. Quintanilla</span>
-      <ButtonDownloadCV />
+      <ButtonDownloadCV client:load />
     </div>
     <div class="row-span-1 col-span-2">
       <p class="text-white">
