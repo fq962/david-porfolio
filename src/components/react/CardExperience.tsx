@@ -22,9 +22,8 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
   title,
   description,
   yearExperience,
-  // pageURL,
   imageURL,
-  knowledge,
+  skills,
 }) => {
   const [rotate, setRotate] = useState({ x: 0, y: 0 });
 
@@ -84,13 +83,14 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           <div className="">
             <div className="flex flex-wrap gap-2">
               {// eslint-disable-next-line @typescript-eslint/no-unused-vars
-              knowledge?.map((item, index) => {
+              skills?.map((skill) => {
                 return (
                   <span
-                    key={index}
-                    className="me-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300"
+                    key={skill.id}
+                    className=" me-2 flex items-center justify-center gap-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300"
                   >
-                    {item}
+                    <img className="h-4" src={skill.skillIcon} alt="" />
+                    {skill.skill}
                   </span>
                 );
               })}

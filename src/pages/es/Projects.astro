@@ -5,7 +5,10 @@ const description = `Decidí expandir mis conocimientos en desarrollo web aprend
 const imageURL = "/static/images/fermodoroPage.png";
 ---
 
-<section class="flex items-center flex-col justify-center w-full gap-5 pt-14">
+<section
+  id="proyectos"
+  class="flex items-center flex-col justify-center w-full gap-5 pt-14"
+>
   <!-- <CardExperience /> -->
   <!-- <div class="w-[850px] flex justify-start items-center p-1"> -->
   <div
@@ -18,7 +21,20 @@ const imageURL = "/static/images/fermodoroPage.png";
     description={description}
     pageURL="https://fermodoro.site/"
     imageURL={imageURL}
-    knowledge={["React", "TypeScript", "Tailwind"]}
+    skills={[
+      { id: 1, skill: "React", skillIcon: "/static/icons/react-icon.webp" },
+      {
+        id: 2,
+        skill: "TypeScript",
+        skillIcon: "/static/icons/typescript-icon.webp",
+      },
+      {
+        id: 3,
+        skill: "Tailwind",
+        skillIcon: "/static/icons/tailwind-icon.webp",
+      },
+    ]}
+    ,
     client:load
   />
 </section>

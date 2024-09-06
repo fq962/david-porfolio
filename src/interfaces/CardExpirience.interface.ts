@@ -4,5 +4,11 @@ export interface CardInterface {
   yearExperience?: string;
   pageURL?: string;
   imageURL?: string;
-  knowledge?: string[];
+  skills?: SkillsInterface[];
+}
+
+export interface SkillsInterface {
+  id: number;
+  skill: string;
+  skillIcon?: string;
 }
