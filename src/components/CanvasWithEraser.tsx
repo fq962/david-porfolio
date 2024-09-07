@@ -23,7 +23,7 @@ export default function MouseStyle() {
 
   useEffect(() => {
     let lastTime = 0;
-    const fps = 60;
+    const fps = 200;
 
     const handleMouseMove = (event: MouseEvent) => {
       const currentTime = performance.now();
@@ -47,7 +47,7 @@ export default function MouseStyle() {
       );
     };
 
-    const intervalId = setInterval(updatePointsAge, 16);
+    const intervalId = setInterval(updatePointsAge, 12);
 
     document.addEventListener("mousemove", handleMouseMove);
     document.addEventListener("mouseleave", handleMouseLeave);
@@ -65,16 +65,35 @@ export default function MouseStyle() {
     const start = points[0];
     let path = `M ${start.x} ${start.y}`;
 
+    const totalLength = points.length - 30;
+
     for (let i = 1; i < points.length - 2; i++) {
       const current = points[i];
       const next = points[i + 1];
-      const midX = (current.x + next.x) / 2;
-      const midY = (current.y + next.y) / 2;
-      path += ` Q ${current.x} ${current.y}, ${midX} ${midY}`;
-    }
+      const progress = 1 - i / totalLength; // 1 at the start, 0 at the end
+      const strokeWidth = 0.5 + 3.8 * progress; // Varies from 7.5 to 0.5
 
-    const last = points[points.length - 1];
-    path += ` L ${last.x} ${last.y}`;
+      console.log(strokeWidth);
+
+      if (i === 0) {
+        path += `M ${next.x} ${next.y} `;
+      }
+
+      path += `L ${current.x} ${current.y} `;
+
+      if (i < points.length - 2) {
+        path += `M ${current.x} ${current.y} `;
+      }
+
+      path += `<path
+                d="M ${current.x} ${current.y} L ${next.x} ${next.y}"
+                fill="coral"
+                stroke="rgba(157, 186, 150, 1)"
+                stroke-width="${strokeWidth}"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />`;
+    }
 
     return path;
   };
@@ -83,22 +102,15 @@ export default function MouseStyle() {
     <>
       {isVisible && (
         <svg className="pointer-events-none fixed left-0 top-0 h-full w-full">
-          <path
+          <g dangerouslySetInnerHTML={{ __html: createPath(points) }} />
+          {/* <path
             d={createPath(points)}
             fill="none"
-            stroke="rgba(65, 65, 65, 0.6)"
-            strokeWidth="8"
+            stroke="rgba(157, 186, 150, 0.5)"
+            strokeWidth="7.5"
             strokeLinecap="round"
             strokeLinejoin="round"
-          >
-            <animate
-              attributeName="stroke-dashoffset"
-              from="0"
-              to="1000"
-              dur="1.5s"
-              repeatCount="indefinite"
-            />
-          </path>
+          ></path> */}
         </svg>
       )}
     </>
