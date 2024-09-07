@@ -1,4 +1,6 @@
 ---
+import SquareRoundedIcon from "../../public/static/icons/SquarePointerIcon";
+import MouseStyle from "../components/CanvasWithEraser";
 import Header from "../components/Header.astro";
 
 interface Props {
@@ -6,6 +8,7 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const svgBase64 = `data:image/svg+xml;base64,${btoa(SquareRoundedIcon)}`;
 ---
 
 <!doctype html>
@@ -23,9 +26,15 @@ const { title } = Astro.props;
     <main>
       <slot />
     </main>
+    <MouseStyle client:load />
   </body>
 </html>
 <style is:global>
+  body {
+    cursor:
+      url(/public/static/icons/rounded-pointer.svg) 12 12,
+      auto;
+  }
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
