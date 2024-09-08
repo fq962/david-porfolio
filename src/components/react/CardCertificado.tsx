@@ -24,26 +24,22 @@ export const CardCertificadoComponnent: React.FC<CardCertificadoInterface> = ({
   institucion,
   certificadoURL,
 }) => {
-  const [rotate, setRotate] = useState({ x: 0, y: 0 });
+  const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
-  const onMouseMove = useCallback(
-    throttle((e: MouseEvent<HTMLDivElement>) => {
-      const card = e.currentTarget;
-      const box = card.getBoundingClientRect();
-      const x = e.clientX - box.left;
-      const y = e.clientY - box.top;
-      const centerX = box.width / 2;
-      const centerY = box.height / 2;
-      const rotateX = (y - centerY) / 3;
-      const rotateY = (centerX - x) / 20;
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const card = e.currentTarget;
+    const box = card.getBoundingClientRect();
+    const centerX = box.left + box.width / 2;
+    const centerY = box.top + box.height / 2;
+    const mouseX = e.clientX - centerX;
+    const mouseY = e.clientY - centerY;
+    const rotateX = (mouseY / (box.height / 2)) * -10; // Increased from -10 to -20
+    const rotateY = (mouseX / (box.width / 2)) * 10; // Increased from 10 to 20
+    setRotation({ x: rotateX, y: rotateY });
+  };
 
-      setRotate({ x: rotateX, y: rotateY });
-    }, 100),
-    [],
-  );
-
-  const onMouseLeave = () => {
-    setRotate({ x: 0, y: 0 });
+  const handleMouseLeave = () => {
+    setRotation({ x: 0, y: 0 });
   };
 
   return (
@@ -62,10 +58,15 @@ export const CardCertificadoComponnent: React.FC<CardCertificadoInterface> = ({
             backdrop-filter
             transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s]
             will-change-transform"
-        onMouseMove={onMouseMove}
-        onMouseLeave={onMouseLeave}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        // style={{
+        //   transform: `perspective(50000px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale3d(1, 1, 1)`,
+        //   transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
+        // }}
         style={{
-          transform: `perspective(50000px) rotateX(${rotate.x}deg) rotateY(${rotate.y}deg) scale3d(1, 1, 1)`,
+          transform: `perspective(500px) rotateX(${rotation.x}deg) rotateY(${rotation.y}deg) scale3d(1, 1, 1)`,
+          transformStyle: "preserve-3d",
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
