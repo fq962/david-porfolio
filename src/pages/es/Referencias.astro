@@ -1,0 +1,46 @@
+---
+import { CardCertificadoComponnent } from "../../components/react/CardCertificado";
+import { CardReferenciasComponnent } from "../../components/react/CardReferencias";
+---
+
+<section
+  class="flex items-center flex-col justify-center w-full gap-5 pt-14 pb-14"
+>
+  <div
+    class="flex
+        justify-start
+        items-center
+        p-1
+        sm:w-full
+        sm:pl-4
+        md:w-[850px]"
+  >
+    <label for="" class="text-white font-semibold text-2xl">Referencias</label>
+  </div>
+  <div class="grid
+        grid-cols-1
+        sm:grid-cols-2
+        gap-6">
+    <CardReferenciasComponnent
+      id={1}
+      nombreReferencia="Daniel Ochoa"
+      carreraReferencia="Licenciado en Mercadotecnia y Negocios Internacionales"
+      numeroTelefono="+504 9954-9018"
+      client:load
+    />
+    <CardReferenciasComponnent
+      id={2}
+      nombreReferencia="Milton Barrientos"
+      carreraReferencia="Ingeniero en Informática"
+      numeroTelefono="+504 8828-5038"
+      client:load
+    />
+    <CardReferenciasComponnent
+      id={3}
+      nombreReferencia="German Reyes"
+      carreraReferencia="Ingeniero en Telecomunicaciones"
+      numeroTelefono="+504 9906-9506"
+      client:load
+    />
+  </div>
+</section>
