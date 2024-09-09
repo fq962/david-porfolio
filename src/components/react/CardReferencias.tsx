@@ -83,19 +83,17 @@ export const CardReferenciasComponnent: React.FC<ReferenciaInterface> = ({
       >
         <div className="col-start-1 col-end-13 flex flex-col gap-2">
           <div>
-            <h1 className="mb-2 text-xl font-bold text-white group-hover:text-linkGreen">
+            <h1 className="text-xl font-bold text-white group-hover:text-linkGreen">
               {nombreReferencia}
             </h1>
           </div>
-          <div className="">
-            <div className="flex flex-wrap gap-2">
-              <span className="me-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                {carreraReferencia}
-              </span>
-              <span className="me-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                {numeroTelefono}
-              </span>
-            </div>
+          <div className="flex flex-col gap-1">
+            <span className="me-2 rounded  px-2.5 py-0.5 text-sm font-bold text-blue-800  dark:text-blue-300">
+              {carreraReferencia}
+            </span>
+            <span className="me-2 rounded px-2.5 py-0.5 text-sm font-medium italic text-blue-800  dark:text-blue-300">
+              {numeroTelefono}
+            </span>
           </div>
         </div>
       </div>
