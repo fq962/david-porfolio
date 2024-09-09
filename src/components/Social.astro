@@ -1,8 +1,26 @@
-<div
-  class="group w-[40px] fixed bottom-0 left-10 right-auto z-[10] flex flex-col justify-center hidden lg:block"
->
-  <ul class="lista-social">
-    <li class="flex items-center justify-center">
+<!-- class="group w-[40px] fixed bottom-0 left-10 right-auto z-[10] flex flex-col justify-center lg:block" --><!-- class="group w-full bottom-0 left-10 right-auto z-[10] lg:w-[40px] lg:block lg:flex-col lg:justify-center" -->
+<div class="group">
+  <!-- <ul class="lista-social flex justify-center items-center gap-8"> -->
+  <!-- class="lista-social lg:bottom-0 lg:left-10 :lg:right-auto lg:z-[10] flex justify-center items-center gap-8 lg:flex-col lg:absolute lg:gap-0" -->
+  <!-- Este esta bueno -->
+  <!-- class="lista-social w-[40px] fixed bottom-0 left-10 right-auto z-[10] flex flex-col justify-center items-center lg:block" -->
+  <ul
+    class="lista-social
+      w-full
+      flex
+      justify-center
+      items-center
+      gap-8
+      lg:w-[40px]
+      lg:fixed
+      lg:bottom-0
+      lg:left-10
+      lg:right-auto
+      lg:z-[10]
+      lg:flex-col
+      lg:gap-0"
+  >
+    <li class="lg:flex lg:justify-center lg:items-center">
       <a
         class="p-[10px]"
         href="https://github.com/fq962"
@@ -24,7 +42,7 @@
         ></a
       >
     </li>
-    <li class="flex items-center justify-center">
+    <li class="lg:flex lg:justify-center lg:items-center">
       <a
         class="p-[10px]"
         href="https://www.linkedin.com/in/fernando-quintanilla-6349951a0/"
@@ -54,7 +72,7 @@
         ></a
       >
     </li>
-    <li class="flex items-center justify-center">
+    <li class="lg:flex lg:justify-center lg:items-center">
       <a
         class="p-[10px]"
         href="https://www.instagram.com/df.quintanillah"
@@ -81,7 +99,7 @@
         </svg></a
       >
     </li>
-    <li class="mb-5 flex items-center justify-center">
+    <li class="lg:flex lg:justify-center lg:items-center">
       <a
         class="p-[10px]"
         href="df.quintanillah@gmail.com"
@@ -105,11 +123,15 @@
         ></a
       >
     </li>
+    <li
+      class="lg:block lg:pt-[10px] hidden after:mb-0 after:ml-auto after:mr-auto after:mt-0 after:block after:h-[90px] after:w-[2px] after:bg-[#a8b2d1] after:content-['']"
+    >
+    </li>
   </ul>
 </div>
 
-<style>
+<!-- <style>
   .lista-social::after {
     @apply mb-0 ml-auto mr-auto mt-0 block h-[90px] w-[2px] bg-[#a8b2d1] content-[''];
   }
-</style>
+</style> -->
