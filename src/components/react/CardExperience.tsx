@@ -46,7 +46,8 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
   return (
     <>
       <div
-        className="card relative grid grid-cols-12 gap-2 rounded-lg p-4 px-5 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform hover:bg-cardHover hover:bg-opacity-40 hover:shadow-lg hover:backdrop-blur-md hover:backdrop-filter sm:w-[750px]"
+        // className="card relative grid grid-cols-12 gap-2 rounded-lg p-4 px-5 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform hover:bg-cardHover hover:bg-opacity-40 hover:shadow-lg hover:backdrop-blur-md hover:backdrop-filter sm:w-[750px]"
+        className="card relative grid grid-cols-12 grid-rows-3 gap-2 rounded-lg p-4 px-5 transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s] will-change-transform hover:bg-cardHover hover:bg-opacity-40 hover:shadow-lg hover:backdrop-blur-md hover:backdrop-filter md:w-[750px]"
         onMouseMove={handleMouseMove}
         onMouseLeave={handleMouseLeave}
         // style={{
@@ -59,20 +60,27 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
-        <div className="col-start-1 col-end-3">
-          {imageURL ? (
+        {/* Imagen o año de experiencia */}
+        <div className="order-1 col-start-1 col-end-13 row-start-1">
+          <span className="font-medium text-gray-500">{yearExperience}</span>
+
+          {/* {imageURL ? (
             <img
-              className="rounded-md lg:w-48 xl:w-32"
+              // className="rounded-md lg:w-48 xl:w-32"
+              className="w-40 rounded-md"
               src={imageURL}
               alt="Site Image"
             />
           ) : (
             <span className="font-medium text-gray-500">{yearExperience}</span>
-          )}
+          )} */}
           {/* <span className="text-gray-500 font-medium">{yearExperience}</span> */}
           {/* <img className="rounded-xl" src="../../../public/fermodoroPage.png" alt="Site Image" /> */}
         </div>
-        <div className="col-start-3 col-end-13 flex flex-col pl-3 xl:pl-3">
+        {/* <div className="col-start-3 col-end-13 flex flex-col pl-3 xl:pl-3"> */}
+        {/* Descripcion del card */}
+        {/* <div className="col-start-3 col-end-13 row-start-2 flex flex-col pl-3"> */}
+        <div className="col-start-1 col-end-13 row-start-2 flex flex-col">
           <div className=" ">
             <h2 className="mb-2 text-xl font-bold text-white group-hover:text-linkGreen">
               {title}
@@ -81,7 +89,8 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           <div className="pb-5">
             <p className="text-gray-400">{description}</p>
           </div>
-          <div className="">
+          {/* Skills */}
+          <div className="row-start-3">
             <div className="flex flex-wrap gap-2">
               {// eslint-disable-next-line @typescript-eslint/no-unused-vars
               skills?.map((skill) => {
