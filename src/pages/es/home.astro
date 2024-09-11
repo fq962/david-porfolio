@@ -1,26 +1,24 @@
 ---
 import { ButtonDownloadCV } from "../../components/react/DownloadCV";
+import { basics } from "../../../cv.json";
 ---
 
 <section id="inicio" class="flex items-center justify-center w-full pt-14">
   <div class="grid grid-rows-2 grid-flow-col gap-4 w-[850px] px-5">
     <div class="col-span-2 flex flex-col items-start gap-5">
-      <span class="text-white font-bold text-3xl">David F. Quintanilla</span>
+      <span class="text-white font-bold text-3xl">{basics.name}</span>
       <ButtonDownloadCV client:load />
     </div>
     <div class="row-span-1 col-span-2">
       <p class="text-white">
-        Con más de dos años de experiencia como desarrollador web y backend,
-        incluyendo un año como freelancer, tengo una sólida comprensión del
-        panorama tecnológico en constante evolución. Apasionado por la
-        tecnología.
+        {basics.summary}
       </p>
     </div>
     <div class="row-span-2">
       <img
         class="rounded-full hidden md:block"
-        src={"/static/images/Fernando_B&N.jpg"}
-        alt="David F. Quintanilla"
+        src={"/static/images/me.webp"}
+        alt={basics.name}
       />
     </div>
   </div>

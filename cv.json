@@ -1,0 +1,389 @@
+{
+  "basics": {
+    "name": "PINGA",
+    "label": "Ingeniero de Software con más de 2 años de experiencia",
+
+    "email": "miltonbarrientos@gmail.com",
+    "phone": "+504 88285038",
+    "url": "https://crywhat.site/",
+    "summary": "+2 años de experiencia como Desarrollador Web. Actualmente me encuentro trabajando en Allas Repuestos como Ingeniero de Software, donde he liderado el desarrollo de Proyectos para Usuarios Internos de la Empresa. He sabido que me dedicaría al rubro tecnologico desde que estaba en la cuna.",
+    "location": {
+      "address": "https://maps.app.goo.gl/ZhXbcW6AKNwGrugKA",
+      "postalCode": "11101",
+      "city": "Tegucigalpa",
+      "countryCode": "HN",
+      "region": "Honduras"
+    },
+    "profiles": [
+      {
+        "network": "email",
+        "username": "miltonbarrientos2",
+        "url": "mailto:miltonbarrientos2@gmail.com"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "milton-barrientos",
+        "url": "https://www.linkedin.com/in/milton-barrientos-6130411a7/"
+      },
+      {
+        "network": "GitHub",
+        "username": "crywhat",
+        "url": "https://github.com/crywhat7"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Allas Repuestos",
+      "position": "Desarrollador FullStack → Ingeniero de Software",
+      "url": "https://allasrepuestos.store/",
+      "startDate": "2022-05-05",
+      "endDate": null,
+      "summary": "Empecé como Desarrollador Trainee con nula Experiencia, con el tiempo (y muy rápido) fui escalando posiciones hasta llegar a Ingeniero de Software. He liderado el desarrollo de Proyectos para Usuarios Internos de la Empresa. He trabajado con tecnologías como Angular, NodeJS, PostgreSQL, C#, DatawareHouse, entre otras. Me he familiarizado con la metodología SCRUM desde el primer día.",
+      "highlights": [
+        "Crecimiento rápido",
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Trabajo en Equipo"
+      ]
+    },
+    {
+      "name": "Servicentro Willy",
+      "position": "Freelancer - Desarrollador Web y Lider de Proyectos",
+      "url": "https://www.facebook.com/servicentrowillyhn",
+      "startDate": "2024-07-01",
+      "endDate": null,
+      "summary": "Actualmente me encuentro trabajando en variados paquetes de mejoras en el sistema de clientes internos de Servicentro Willy. He liderado el desarrollo de Proyectos para Usuarios Internos de la Empresa. He trabajado con tecnologías como Angular, NestJS, PostgreSQL.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Trabajo en Equipo"
+      ]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Ceutec - Universidad Tecnológica de Honduras",
+      "url": "https://ceutec.hn/",
+      "area": "Ingeniero en Sistemas",
+      "studyType": "Ingeniería",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "score": "5.0",
+      "courses": ["C++", "Java", "PHP", "MySQL"]
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Angular - The Complete Guide (2024 Edition)",
+      "date": "2023-03-01",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-3f6dde7d-fbe3-48b7-bba3-dc19a45ff74c.jpg?v=1677678612000"
+    },
+    {
+      "name": "NestJS: The Complete Developer's Guide",
+      "date": "2023-07-08",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f99765ea-1d0b-4210-9dda-303f7fb840e2.jpg?v=1688828179000"
+    },
+    {
+      "name": "Understanding TypeScript",
+      "date": "2022-10-22",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-914531bb-818a-4361-a179-f13ad8cbea13.jpg?v=1666498602000"
+    },
+    {
+      "name": "Learn SQL Using PostgreSQL: From Zero to Hero",
+      "date": "2022-09-20",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-148665fb-db08-4a3e-b711-b26f3fa4264c.jpg?v=1663729227000"
+    },
+    {
+      "name": "Complete C# Masterclass",
+      "date": "2023-11-13",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-111c9a87-090f-4c78-8e06-c514c26213db.jpg?v=1699892909000"
+    },
+    {
+      "name": "Modern JavaScript (Complete guide, from Novice to Ninja)",
+      "date": "2022-10-09",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-07e32514-6598-444c-bfc6-c4c096c8d03b.jpg?v=1665334084000"
+    },
+    {
+      "name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2024",
+      "date": "2023-01-07",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-b02a2fa0-4ff6-4116-b936-f15ee27556e2.jpg?v=1673101018000"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "UI"]
+    },
+    {
+      "name": "Astro",
+      "level": "Básico",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "React",
+      "level": "Básico",
+      "keywords": []
+    },
+    {
+      "name": "NodeJS",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "Bitbucket",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Jira",
+      "level": "Avanzado",
+      "keywords": [
+        "Gestión de Proyectos",
+        "Gestión de Tareas",
+        "Gestión de Equipos"
+      ]
+    },
+    {
+      "name": "Confluence",
+      "level": "Avanzado",
+      "keywords": [
+        "Gestión de Proyectos",
+        "Gestión de Tareas",
+        "Gestión de Equipos"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "B1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Ajedrez",
+      "keywords": [
+        "Estrategia",
+        "Juego de Mesa",
+        "Competición",
+        "Desarrollo Personal"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Heberth Elvir",
+      "reference": "Gerente de Operaciones en COPECO - (+504 3329-2869)"
+    },
+    {
+      "name": "Fernando Quintanilla",
+      "reference": "Ingeniero de Software en Allas Repuestos - (+504 3143-3099)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Abyss",
+      "isActive": true,
+      "description": "Proyecto de la universidad, una aplicación web estilo eCommerce que permite a los usuarios comprar productos de tecnología. La aplicación fue desarrollada con Angular, NestJS, Supabase, TailwindCSS, entre otras tecnologías.",
+      "highlights": [
+        "Trabajo en Equipo",
+        "Desarrollo de Proyectos",
+        "Desarrollo FullStack"
+      ],
+      "url": "https://abysshn.shop/"
+    },
+    {
+      "name": "Diagramación de Procesos - Logística",
+      "isActive": false,
+      "description": "Diagramé los procesos de Logística de Allas Repuestos. Los procesos diagramados fueron: Procesamiento de Nueva Mercadería, Toma de Inventarios, Base de Conocimientos, Proceso de Reclamos y Garantías, Algoritmo de Resurtido de Tiendas, Módulo de Compras - Nacionalización de Pedidos, Proceso de Consumo Interno, entre otros.",
+      "highlights": ["Diagramación de Procesos"],
+      "url": null
+    },
+    {
+      "name": "Procesamientos de Nueva Mercadería - Logística",
+      "isActive": false,
+      "description": "Lideré el desarrollo de un proyecto que tiene como objetivo llevar un control de la nueva mercadería que llega a la empresa. La aplicación permite a los usuarios de logística seguir un proceso establecido para la recepción de la nueva mercadería, digitalización de documentos y automatización de procesos manuales.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Trabajo en Equipo"
+      ],
+      "url": null
+    },
+    {
+      "name": "Toma de Inventarios - Logística",
+      "isActive": false,
+      "description": "Lideré el desarrollo de un módulo que tiene como objetivo realizar la toma de inventarios de los productos en las tiendas de Allas Repuestos. La aplicación permite a los usuarios de logística realizar la toma de inventarios de los productos en las tiendas de la empresa, digitalización de documentos y automatización de procesos manuales.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Trabajo en Equipo"
+      ],
+      "url": null
+    },
+    {
+      "name": "Módulo de aplicaciones de vehiculos-productos",
+      "isActive": false,
+      "description": "Desarrollé un módulo que permite a los clientes de Servicentro Willy, definir los productos que se le aplicarán a un vehículo en específico. La aplicación permite a los usuarios de Servicentro Willy definir los productos que se le aplicarán a un vehículo en específico.",
+      "highlights": ["Desarrollo de Proyectos", "Trabajo en Equipo"],
+      "url": null
+    },
+    {
+      "name": "Base de Conocimientos - Departamento de Compras",
+      "isActive": false,
+      "description": "Lideré el desarrollo de una Base de Conocimientos para el Departamento de Compras de Allas Repuestos. La aplicación permite a los usuarios de compras visualizar la información necesaria y puntual para cada pedido de cada producto, información proveida por los Gerentes de Compras.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Trabajo en Equipo"
+      ],
+      "url": null
+    },
+    {
+      "name": "Proceso de Reclamos y Garantías",
+      "isActive": false,
+      "description": "Lideré el desarrollo de un Proceso de Reclamos y Garantías para Allas Repuestos. La aplicación tiene como objetivo llevar un control de los reclamos y garantías de los productos vendidos por la empresa. Este proyecto fue una digitalización y mejora de la forma en que se llevaba el control de los reclamos y garantías en la empresa.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Toma de Requerimientos"
+      ],
+      "url": null
+    },
+    {
+      "name": "Algoritmo de Resurtido de Tiendas",
+      "isActive": false,
+      "description": "Desarrollé un Algoritmo de Resurtido de Tiendas para Allas Repuestos. El algoritmo tiene como objetivo calcular la cantidad de productos que se deben enviar a cada tienda de Allas Repuestos, basado en la demanda de los productos en cada tienda. El algoritmo toma en cuenta la demanda de los productos en cada tienda, la cantidad de productos en cada tienda y la cantidad de productos en el almacén central de la empresa.",
+      "highlights": [
+        "Desarrollo BackEnd",
+        "Comprensión de Logística",
+        "Manejo de Inventario",
+        "Manejo de Hilos en NodeJS",
+        "PostgreSQL",
+        "Automatización de Procesos"
+      ],
+      "url": null
+    },
+    {
+      "name": "Módulo de Compras - Nacionalización de Pedidos",
+      "isActive": false,
+      "description": "Lideré el desarrollo de un módulo para el proceso de Compras Internacionales de la Empresa, que consistía en la Nacionalización de Pedidos. La aplicación permite a los usuarios de compras realizar los pasos necesarios para nacionalizar un pedido, digitalización de documentos legales y fiscales y automatización de procesos manuales.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Comprensión de Procesos de Compras Internacionales"
+      ],
+      "url": null
+    },
+    {
+      "name": "Proceso de Consumo Interno",
+      "isActive": false,
+      "description": "Lideré y Desarrollé un Proceso de Consumo Interno para Allas Repuestos. La aplicación tiene como objetivo llevar un control de los productos que se consumen internamente en la empresa. Este proyecto fue una digitalización y mejora de la forma en que se llevaba el control de los productos que se consumen internamente en la empresa.",
+      "highlights": [
+        "Liderazgo de Proyectos",
+        "Desarrollo de Proyectos",
+        "Toma de Requerimientos",
+        "Automatización de Procesos"
+      ],
+      "url": null
+    },
+    {
+      "name": "Rediseño de la Página Web",
+      "isActive": true,
+      "description": "Lideré el rediseño de la Página Web de Allas Repuestos. La aplicación tiene como objetivo mejorar la experiencia de usuario y la usabilidad de la página web de la empresa. Este fue un proyecto opcional que propuse y lideré, con el objetivo de mejorar la imagen de la empresa y la experiencia de usuario en la página web.",
+      "highlights": ["Astro", "Páginas Estáticas", "SSR"],
+      "url": "https://allasrepuestos.store/"
+    },
+    {
+      "name": "Módulo CRM de Seguimiento de Clientes",
+      "isActive": false,
+      "description": "Participé como Desarrollador JR en la creación de un CRM para el seguimiento de clientes de Allas Repuestos. La aplicación tiene como objetivo llevar un control de los clientes de la empresa, sus pedidos, sus pagos y sus reclamos. Este proyecto fue una digitalización y mejora de la forma en que se llevaba el control de los clientes en la empresa.",
+      "highlights": ["CRM", "Desarrollo FrontEnd"],
+      "url": null
+    },
+    {
+      "name": "Tableros de MCIs y MPs para el Departamento de Ventas",
+      "isActive": false,
+      "description": "Lideré y Participé en el desarrollo de Tableros de MCIs (Metas Crucialmente Importantes) y MPs (Medidas de Predicción) para el Departamento de Ventas de Allas Repuestos. Los tableros tienen como objetivo llevar un control de las metas y las medidas de predicción del departamento de ventas de la empresa.",
+      "highlights": ["Looker Studio", "DataWareHouse"],
+      "url": null
+    },
+    {
+      "name": "Entre otros...",
+      "isActive": false,
+      "description": "Actualmente llevo +30 proyectos en los que me he involucrado en la empresa.",
+      "highlights": [],
+      "url": null
+    }
+  ]
+}

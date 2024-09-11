@@ -1,8 +1,7 @@
 ---
 import { CardExperienceComponnent } from "../../components/react/CardExperience";
 
-const description = `Soy desarrollador de software con experiencia en múltiples tecnologías de frontend, backend, base de datos y desarrollo móvil. Actualmente, desempeño el rol de líder de equipo, donde me encargo de analizar y definir los requerimientos de software de nuestros clientes, garantizando que las soluciones desarrolladas cumplan con sus necesidades. Además, gestiono un equipo de desarrollo, coordinando la ejecución de los proyectos desde su planificación hasta su implementación final, asegurando la calidad y eficiencia en cada etapa del proceso.`;
-const description_2 = `Como freelancer, desarrollé tres aplicaciones web de tipo Single Page Application (SPA) para clientes en diferentes industrias. Estos proyectos incluyeron la creación de sitios web para Fitech, Dr. Will Fernández Cirujano, e iBroom Cleaning. En estos proyectos, utilicé WordPress como la plataforma principal, aprovechando el plugin Elementor para la construcción de interfaces, junto con HTML y CSS para personalizar y optimizar la experiencia del usuario. Estas aplicaciones web fueron diseñadas para ser altamente funcionales y fáciles de navegar, cumpliendo con las necesidades específicas de cada cliente y demostrando mi capacidad para manejar proyectos de principio a fin en entornos freelance.`;
+import { work } from "../../../cv.json";
 ---
 
 <section
@@ -10,106 +9,25 @@ const description_2 = `Como freelancer, desarrollé tres aplicaciones web de tip
   class="flex items-center flex-col justify-center w-full gap-5 pt-14"
 >
   <!-- <CardExperience /> -->
-  <!-- <div class="w-[850px] flex justify-start items-center p-1 2xl:w-[150px]"> -->
   <div
     class="flex justify-start items-center p-1 sm:w-full sm:pl-4 md:w-[850px]"
   >
-    <label for="" class="text-white font-semibold text-2xl"
-      >Experiencia Laboral</label
-    >
+    <label for="" class="text-white font-semibold text-2xl">
+      Experiencia Laboral
+    </label>
   </div>
-  <CardExperienceComponnent
-    title="ALLAS Repuestos"
-    description={description}
-    yearExperience="2021 - PRESENTE"
-    skills={[
-      {
-        id: 1,
-        skill: "Angular",
-        skillIcon: "static/icons/angular-icon.webp",
-      },
-      {
-        id: 2,
-        skill: "TypeScript",
-        skillIcon: "static/icons/typescript-icon.webp",
-      },
-      {
-        id: 3,
-        skill: "NestJS",
-        skillIcon: "static/icons/nestjs-icon.webp",
-      },
-      {
-        id: 4,
-        skill: "PosgreSQL",
-        skillIcon: "static/icons/postgresql-icon.webp",
-      },
-      {
-        id: 5,
-        skill: "Jenkins",
-        skillIcon: "static/icons/jenkins-icon.webp",
-      },
-      {
-        id: 6,
-        skill: "Flutter",
-        skillIcon: "static/icons/flutter-icon.webp",
-      },
-      {
-        id: 7,
-        skill: "PM2",
-        skillIcon: "static/icons/pm2-icon.webp",
-      },
-      {
-        id: 8,
-        skill: "Metodología Scrum",
-        skillIcon: "static/icons/scrum-icon.webp",
-      },
-      {
-        id: 9,
-        skill: "Jira",
-        skillIcon: "static/icons/jira-icon.webp",
-      },
-      {
-        id: 10,
-        skill: "Git/Github",
-        skillIcon: "static/icons/git-icon.webp",
-      },
-    ]}
-    client:load
-  />
-  <CardExperienceComponnent
-    title="FREELANCER"
-    description={description_2}
-    yearExperience="2020 - 2021"
-    skills={[
-      {
-        id: 1,
-        skill: "HTML5",
-        skillIcon: "static/icons/html-icon.webp",
-      },
-      {
-        id: 2,
-        skill: "CSS",
-        skillIcon: "static/icons/css-icon.webp",
-      },
-      {
-        id: 5,
-        skill: "Wordpress",
-        skillIcon: "static/icons/wordpress-icon.webp",
-      },
-      {
-        id: 6,
-        skill: "Elementor (plugin)",
-        skillIcon: "static/icons/elementor-icon.webp",
-      },
-    ]}
-    client:load
-  />
-  <!-- <div class="flex px-96 mx-20 py-12 lg:px-52">
-    <div class="flex flex-col gap-5 items-start w-full">
-      <span class="text-white font-bold text-3xl">Experiencia</span>
-      <div class="flex flex-col gap-8">
-        <CardExperience />
-      </div>
-    </div>
-  </div> -->
+  {
+    work.map((w) => (
+      <CardExperienceComponnent
+        title={w.position}
+        description={w.summary}
+        yearExperience={w.startDate + " - " + (w.endDate ?? "Actualidad")}
+        skills={w.highlights.map((h) => ({
+          skill: h,
+          skillIcon: `static/icons/${h.toLowerCase().trim()}`,
+        }))}
+        client:load
+      />
+    ))
+  }
 </section>

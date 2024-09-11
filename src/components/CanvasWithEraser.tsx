@@ -73,8 +73,6 @@ export default function MouseStyle() {
       const progress = 1 - i / totalLength; // 1 at the start, 0 at the end
       const strokeWidth = 0.5 + 3.8 * progress; // Varies from 7.5 to 0.5
 
-      console.log(strokeWidth);
-
       if (i === 0) {
         path += `M ${next.x} ${next.y} `;
       }

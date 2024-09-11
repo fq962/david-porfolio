@@ -1,0 +1,33 @@
+---
+import GitHub from "./GitHub.astro";
+import LinkedIn from "./LinkedIn.astro";
+import Instagram from "./Instagram.astro";
+import Email from "./Email.astro";
+
+export interface Props {
+  type: string;
+}
+
+const { type = "" } = Astro.props;
+
+const getIconByType = (type: string) => {
+  console.log(type);
+
+  switch (type.toLowerCase()) {
+    case "github":
+      return GitHub;
+    case "linkedin":
+      return LinkedIn;
+    case "instagram":
+      return Instagram;
+    case "email":
+      return Email;
+    default:
+      return null;
+  }
+};
+
+const IconComponent = getIconByType(type);
+---
+
+{IconComponent ? <IconComponent /> : <span>Unknown Icon</span>}
