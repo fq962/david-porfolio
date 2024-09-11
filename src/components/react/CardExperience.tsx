@@ -89,7 +89,13 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
             <div className="flex flex-wrap gap-2">
               {// eslint-disable-next-line @typescript-eslint/no-unused-vars
               skills?.map((skill) => {
-                return <Tag key={skill.skill} tag={skill.skill}></Tag>;
+                return (
+                  <Tag
+                    key={skill.skill}
+                    tag={skill.skill}
+                    iconKey={skill.skill}
+                  ></Tag>
+                );
               })}
             </div>
           </div>

@@ -14,6 +14,7 @@ export const KEYS_FOR_ICONS = {
   JENKINS: `${BASE_PATH}/jenkins.webp`,
   JIRA: `${BASE_PATH}/jira.webp`,
   JS: `${BASE_PATH}/js.webp`,
+  JAVASCRIPT: `${BASE_PATH}/js.webp`,
   NESTJS: `${BASE_PATH}/nestjs.webp`,
   NODEJS: `${BASE_PATH}/nodejs.webp`,
   PM2: `${BASE_PATH}/pm2.webp`,
@@ -23,4 +24,8 @@ export const KEYS_FOR_ICONS = {
   TAILWIND: `${BASE_PATH}/tailwind.webp`,
   TYPESCRIPT: `${BASE_PATH}/typescript.webp`,
   WORDPRESS: `${BASE_PATH}/wordpress.webp`,
+  CPP: `${BASE_PATH}/cpp.webp`,
+  JAVA: `${BASE_PATH}/java.webp`,
+  MYSQL: `${BASE_PATH}/mysql.webp`,
+  PHP: `${BASE_PATH}/php.webp`,
 };
