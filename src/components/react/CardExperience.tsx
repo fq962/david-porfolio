@@ -4,21 +4,6 @@ import { useState, type MouseEvent, useCallback } from "react";
 import type { CardInterface } from "../../interfaces/CardExperience.interface";
 import Tag from "./Tag";
 
-function throttle<T extends (...args: any[]) => any>(
-  func: T,
-  delay: number,
-): (...args: Parameters<T>) => void {
-  let lastCall = 0;
-  return (...args: Parameters<T>) => {
-    const now = new Date().getTime();
-    if (now - lastCall < delay) {
-      return;
-    }
-    lastCall = now;
-    return func(...args);
-  };
-}
-
 export const CardExperienceComponnent: React.FC<CardInterface> = ({
   title,
   description,
@@ -61,25 +46,6 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
-        {imageURL || yearExperience ? (
-          <div className="col-start-1 col-end-3">
-            {imageURL ? (
-              <img
-                className="rounded-md lg:w-48 xl:w-32"
-                src={imageURL}
-                alt="Site Image"
-              />
-            ) : (
-              <span className="font-medium text-gray-500">
-                {yearExperience}
-              </span>
-            )}
-          </div>
-        ) : null}
-        <div
-          className={`${!imageURL && !yearExperience ? "col-start-1" : "col-start-3"} col-end-13 flex flex-col pl-3 xl:pl-3`}
-        >
-
         {/* Imagen o año de experiencia */}
         <div className="order-1 col-start-1 col-end-13 row-start-1">
           <span className="font-medium text-gray-500">{yearExperience}</span>

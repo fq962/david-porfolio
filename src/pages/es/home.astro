@@ -4,35 +4,24 @@ import { basics } from "../../../cv.json";
 ---
 
 <section id="inicio" class="flex items-center justify-center w-full pt-14">
-  <div class="grid grid-rows-2 grid-flow-col gap-4 w-[850px] px-5">
-    <div class="col-span-2 flex flex-col items-start gap-5">
-      <span class="text-white font-bold text-3xl">{basics.name}</span>
-
   <div class="grid grid-rows-3 grid-cols-2 gap-4 w-[850px] px-5">
     <div class="col-span-2 row-span-3 md:col-start-3">
       <img
         class="rounded-full w-[150px] h-[150px] md:w-[213px] md:h-[213px]"
-        src={"/static/images/Fernando_B&N.jpg"}
-        alt="David F. Quintanilla"
+        src={"/static/images/me.webp"}
+        alt={basics.name}
       />
     </div>
     <div
       class="row-span-3 md:row-start-1 col-span-2 flex flex-col items-start gap-5 md:row-span-1"
     >
-      <span class="text-white font-bold text-3xl">David F. Quintanilla</span>
+      <span class="text-white font-bold text-3xl">{basics.name}</span>
       <ButtonDownloadCV client:load />
     </div>
     <div class="row-span-3 col-span-3 md:row-start-2 md:col-span-2">
       <p class="text-white">
         {basics.summary}
       </p>
-    </div>
-    <div class="row-span-2">
-      <img
-        class="rounded-full hidden md:block"
-        src={"/static/images/me.webp"}
-        alt={basics.name}
-      />
     </div>
   </div>
 </section>

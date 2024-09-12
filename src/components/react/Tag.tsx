@@ -25,7 +25,7 @@ const Tag: React.FC<SkillIconProps> = ({ tag, iconKey }) => {
     <>
       <span
         key={tag}
-        className=" me-2 flex items-center justify-center gap-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300 hover:bg-blue-200 dark:hover:bg-blue-800 hover:text-blue-900 dark:hover:text-blue-100"
+        className="me-2 flex items-center justify-center gap-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 hover:bg-blue-200 hover:text-blue-900 dark:bg-blue-900 dark:text-blue-300 dark:hover:bg-blue-800 dark:hover:text-blue-100"
       >
         {searchIconByKey(iconKey) && (
           <img

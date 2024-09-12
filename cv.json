@@ -15,20 +15,27 @@
     },
     "profiles": [
       {
-        "network": "email",
-        "username": "miltonbarrientos2",
-        "url": "mailto:miltonbarrientos2@gmail.com"
+        "network": "GitHub",
+        "username": "crywhat",
+        "url": "https://github.com/fq962"
       },
       {
         "network": "LinkedIn",
-        "username": "milton-barrientos",
-        "url": "https://www.linkedin.com/in/milton-barrientos-6130411a7/"
+        "username": "fernando-quintanilla",
+        "url": ""
       },
       {
-        "network": "GitHub",
-        "username": "crywhat",
-        "url": "https://github.com/crywhat7"
+        "network": "Instagram",
+        "username": "df.quintanillah",
+        "url": ""
+      },
+      {
+        "network": "email",
+        "username": "df.quintanillah@gmail.com",
+        "url": "="
       }
+      
+      
     ]
   },
   "work": [

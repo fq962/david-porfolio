@@ -9,32 +9,26 @@ import Skills from "./es/Skills.astro";
 import Education from "./es/Education.astro";
 
 import { basics } from "../../cv.json";
+import Referencias from "./es/Referencias.astro";
 
 const title = basics.name + " - " + basics.summary;
 ---
 
 <Layout title={title}>
   <Home />
-  <Social />
-  <Experience />
-  <Projects />
-  <Skills />
-  <Education />
-  <Certificados />
 </Layout>
-import Referencias from "./es/Referencias.astro";
----
-
-<Layout title="David Quintanilla Portafolio">
-  <Home />
-</Layout>
-<!-- <hr class="bg-red rotate-0" /> -->
-
 <Experience />
 <Projects />
 <Certificados />
+<!-- <Skills /> -->
+<!-- <Education /> -->
 <Referencias />
 <Social />
+
+<!-- <Layout title="David Quintanilla Portafolio">
+  <Home />
+</Layout> -->
+<!-- <hr class="bg-red rotate-0" /> -->
 
 <!-- 
 <style>
