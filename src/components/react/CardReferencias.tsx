@@ -2,6 +2,7 @@
 import React from "react";
 import { useState, type MouseEvent, useCallback } from "react";
 import type { CardCertificadoInterface } from "../../interfaces/CardCertificado.interface";
+import type { ReferenciaInterface } from "../../interfaces/Referencia.interface";
 
 function throttle<T extends (...args: any[]) => any>(
   func: T,
@@ -18,11 +19,11 @@ function throttle<T extends (...args: any[]) => any>(
   };
 }
 
-export const CardCertificadoComponnent: React.FC<CardCertificadoInterface> = ({
-  titulo,
-  fechaCertificado,
-  institucion,
-  certificadoURL,
+export const CardReferenciasComponnent: React.FC<ReferenciaInterface> = ({
+  id,
+  nombreReferencia,
+  carreraReferencia,
+  numeroTelefono,
 }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
 
@@ -45,15 +46,25 @@ export const CardCertificadoComponnent: React.FC<CardCertificadoInterface> = ({
   return (
     <>
       <div
+        // className="
+        //     card relative
+        //     grid
+        //     w-[350px]
+        //     grid-cols-12 gap-2
+        //     rounded-lg
+        //     bg-cardHover
+        //     bg-opacity-40 p-4 px-5
+        //     shadow-lg
+        //     backdrop-blur-md
+        //     backdrop-filter
+        //     transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s]
+        //     will-change-transform"
         className="
             card relative
             grid
             w-[350px]
             grid-cols-12 gap-2
             rounded-lg
-            bg-cardHover
-            bg-opacity-40 p-4 px-5
-            shadow-lg
             backdrop-blur-md
             backdrop-filter
             transition-[all_400ms_cubic-bezier(0.03,0.98,0.52,0.99)_0s]
@@ -72,23 +83,17 @@ export const CardCertificadoComponnent: React.FC<CardCertificadoInterface> = ({
       >
         <div className="col-start-1 col-end-13 flex flex-col gap-2">
           <div>
-            <a
-              target="_blank"
-              href={certificadoURL}
-              className="mb-2 text-xl font-bold text-white group-hover:text-linkGreen"
-            >
-              {titulo}
-            </a>
+            <h1 className="text-xl font-bold text-white group-hover:text-linkGreen">
+              {nombreReferencia}
+            </h1>
           </div>
-          <div className="">
-            <div className="flex flex-wrap gap-2">
-              <span className="me-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                {fechaCertificado}
-              </span>
-              <span className="me-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300">
-                {institucion}
-              </span>
-            </div>
+          <div className="flex flex-col gap-1">
+            <span className="me-2 rounded  px-2.5 py-0.5 text-sm font-bold text-blue-800  dark:text-blue-300">
+              {carreraReferencia}
+            </span>
+            <span className="me-2 rounded px-2.5 py-0.5 text-sm font-medium italic text-blue-800  dark:text-blue-300">
+              {numeroTelefono}
+            </span>
           </div>
         </div>
       </div>

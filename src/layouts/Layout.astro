@@ -34,6 +34,29 @@ const svgBase64 = `data:image/svg+xml;base64,${btoa(SquareRoundedIcon)}`;
     cursor:
       url(/public/static/icons/rounded-pointer.svg) 12 12,
       auto;
+    overflow: overlay;
+  }
+
+  /* ::-webkit-scrollbar {
+    width: 10px;
+  } */
+  ::-webkit-scrollbar {
+    width: 20px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(55, 21, 25, 1);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #9dba96;
+    border-radius: 20px;
+    border: 6px solid transparent;
+    background-clip: content-box;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #9dba96;
   }
   :root {
     --accent: 136, 58, 234;
