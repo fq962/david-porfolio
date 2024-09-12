@@ -8,7 +8,6 @@ export interface CardInterface {
 }
 
 export interface SkillsInterface {
-  id: number;
   skill: string;
-  skillIcon?: string;
+  skillIcon?: string | null;
 }

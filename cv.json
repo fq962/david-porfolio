@@ -1,0 +1,265 @@
+{
+  "basics": {
+    "name": "David F. Quintanilla",
+    "label": "Ingeniero de Software con más de 2 años de experiencia",
+    "email": "df.quintanillah@gmail.com",
+    "phone": "+504  31433099",
+    "url": "https://crywhat.site/",
+    "summary": "Con más de dos años de experiencia como desarrollador web y backend, incluyendo un año como freelancer, tengo una sólida comprensión del panorama tecnológico en constante evolución. Apasionado por la tecnología.",
+    "location": {
+      "address": "https://maps.app.goo.gl/ZhXbcW6AKNwGrugKA",
+      "postalCode": "11101",
+      "city": "Tegucigalpa",
+      "countryCode": "HN",
+      "region": "Honduras"
+    },
+    "profiles": [
+      {
+        "network": "email",
+        "username": "miltonbarrientos2",
+        "url": "mailto:miltonbarrientos2@gmail.com"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "milton-barrientos",
+        "url": "https://www.linkedin.com/in/milton-barrientos-6130411a7/"
+      },
+      {
+        "network": "GitHub",
+        "username": "crywhat",
+        "url": "https://github.com/crywhat7"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Allas Repuestos",
+      "position": "Ingeniero de Software",
+      "url": "https://allasrepuestos.store/",
+      "startDate": "2021-05-05",
+      "endDate": null,
+      "summary": "Soy desarrollador de software con experiencia en múltiples tecnologías de frontend, backend, base de datos y desarrollo móvil. Actualmente, desempeño el rol de líder de equipo, donde me encargo de analizar y definir los requerimientos de software de nuestros clientes, garantizando que las soluciones desarrolladas cumplan con sus necesidades. Además, gestiono un equipo de desarrollo, coordinando la ejecución de los proyectos desde su planificación hasta su implementación final, asegurando la calidad y eficiencia en cada etapa del proceso.",
+      "highlights": [
+        "Angular",
+        "Typescript",
+        "NestJS",
+        "PostgreSQL",
+        "Jenkins",
+        "Flutter",
+        "PM2",
+        "SCRUM",
+        "JIRA",
+        "GIT",
+        "BITBUCKET"
+      ]
+    },
+    {
+      "name": "Freelancer",
+      "position": "Freelancer",
+      "url": "https://www.facebook.com/servicentrowillyhn",
+      "startDate": "2024-07-01",
+      "endDate": null,
+      "summary": "Como freelancer, desarrollé tres aplicaciones web de tipo Single Page Application (SPA) para clientes en diferentes industrias. Estos proyectos incluyeron la creación de sitios web para Fitech, Dr. Will Fernández Cirujano, e iBroom Cleaning. En estos proyectos, utilicé WordPress como la plataforma principal, aprovechando el plugin Elementor para la construcción de interfaces, junto con HTML y CSS para personalizar y optimizar la experiencia del usuario. Estas aplicaciones web fueron diseñadas para ser altamente funcionales y fáciles de navegar, cumpliendo con las necesidades específicas de cada cliente y demostrando mi capacidad para manejar proyectos de principio a fin en entornos freelance.",
+      "highlights": ["HTML", "CSS", "Wordpress", "Elementor"]
+    }
+  ],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Ceutec - Universidad Tecnológica de Honduras",
+      "url": "https://ceutec.hn/",
+      "area": "Ingeniero en Sistemas",
+      "studyType": "Ingeniería",
+      "startDate": "2021-01-01",
+      "endDate": null,
+      "score": "5.0",
+      "courses": ["CPP", "Java", "PHP", "MySQL"]
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Angular - The Complete Guide (2024 Edition)",
+      "date": "2023-03-01",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-3f6dde7d-fbe3-48b7-bba3-dc19a45ff74c.jpg?v=1677678612000"
+    },
+    {
+      "name": "NestJS: The Complete Developer's Guide",
+      "date": "2023-07-08",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f99765ea-1d0b-4210-9dda-303f7fb840e2.jpg?v=1688828179000"
+    },
+    {
+      "name": "Understanding TypeScript",
+      "date": "2022-10-22",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-914531bb-818a-4361-a179-f13ad8cbea13.jpg?v=1666498602000"
+    },
+    {
+      "name": "Learn SQL Using PostgreSQL: From Zero to Hero",
+      "date": "2022-09-20",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-148665fb-db08-4a3e-b711-b26f3fa4264c.jpg?v=1663729227000"
+    },
+    {
+      "name": "Complete C# Masterclass",
+      "date": "2023-11-13",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-111c9a87-090f-4c78-8e06-c514c26213db.jpg?v=1699892909000"
+    },
+    {
+      "name": "Modern JavaScript (Complete guide, from Novice to Ninja)",
+      "date": "2022-10-09",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-07e32514-6598-444c-bfc6-c4c096c8d03b.jpg?v=1665334084000"
+    },
+    {
+      "name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2024",
+      "date": "2023-01-07",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-b02a2fa0-4ff6-4116-b936-f15ee27556e2.jpg?v=1673101018000"
+    }
+  ],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Angular",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Frontend", "UI"]
+    },
+    {
+      "name": "Astro",
+      "level": "Básico",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "React",
+      "level": "Básico",
+      "keywords": []
+    },
+    {
+      "name": "NodeJS",
+      "level": "Avanzado",
+      "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+    },
+    {
+      "name": "PostgreSQL",
+      "level": "Avanzado",
+      "keywords": [
+        "Bases de Datos",
+        "SQL",
+        "Almacenamiento de Datos",
+        "Backend"
+      ]
+    },
+    {
+      "name": "HTML",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
+      "name": "CSS",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Diseño Responsive"]
+    },
+    {
+      "name": "Tailwind",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "CSS Framework",
+        "Diseño Responsive"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "level": "Master",
+      "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+    },
+    {
+      "name": "TypeScript",
+      "level": "Avanzado",
+      "keywords": [
+        "Desarrollo Web",
+        "Frontend",
+        "Backend",
+        "JavaScript Superset"
+      ]
+    },
+    {
+      "name": "Git",
+      "level": "Avanzado",
+      "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+    },
+    {
+      "name": "Bitbucket",
+      "level": "Avanzado",
+      "keywords": [
+        "Control de Versiones",
+        "Colaboración",
+        "Código Fuente",
+        "Git"
+      ]
+    },
+    {
+      "name": "Jira",
+      "level": "Avanzado",
+      "keywords": [
+        "Gestión de Proyectos",
+        "Gestión de Tareas",
+        "Gestión de Equipos"
+      ]
+    },
+    {
+      "name": "Confluence",
+      "level": "Avanzado",
+      "keywords": [
+        "Gestión de Proyectos",
+        "Gestión de Tareas",
+        "Gestión de Equipos"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "fluency": "Nativo"
+    },
+    {
+      "language": "Inglés",
+      "fluency": "B1"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Ajedrez",
+      "keywords": [
+        "Estrategia",
+        "Juego de Mesa",
+        "Competición",
+        "Desarrollo Personal"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Heberth Elvir",
+      "reference": "Gerente de Operaciones en COPECO - (+504 3329-2869)"
+    },
+    {
+      "name": "Fernando Quintanilla",
+      "reference": "Ingeniero de Software en Allas Repuestos - (+504 3143-3099)"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Fermodoro",
+      "isActive": true,
+      "description": "Decidí expandir mis conocimientos en desarrollo web aprendiendo React. Desarrollé un proyecto personal llamado Fermodoro, una aplicación de temporizador Pomodoro inspirada en \"pomodoro.io\". Este proyecto no solo me permitió entender los conceptos fundamentales de React, sino que también me dio la oportunidad de trabajar con Tailwind. Al desarrollar Fermodoro, pude consolidar mis habilidades en la creación de interfaces de usuario dinámicas y en la utilización de estilos personalizados, lo que me ha preparado para enfrentar desafíos más complejos en el desarrollo frontend.",
+      "highlights": ["React", "Typescript", "Tailwind"],
+      "url": "https://abysshn.shop/"
+    }
+  ]
+}

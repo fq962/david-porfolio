@@ -109,9 +109,24 @@ export default function MouseStyle() {
       const current = points[i];
       const next = points[i + 1];
 
+      const progress = 1 - i / totalLength; // 1 at the start, 0 at the end
+      const strokeWidth = 0.5 + 3.8 * progress; // Varies from 7.5 to 0.5
+
+      if (i === 0) {
+        path += `M ${next.x} ${next.y} `;
+      }
+
+      path += `L ${current.x} ${current.y} `;
+
+      if (i < points.length - 2) {
+        path += `M ${current.x} ${current.y} `;
+      }
+
+
       // Usamos la curva de Bézier cuadrática (Q) para suavizar la transición
       const controlX = (current.x + next.x) / 2;
       const controlY = (current.y + next.y) / 2;
+
 
       path += ` Q ${current.x},${current.y} ${controlX},${controlY}`;
     }

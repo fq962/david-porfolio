@@ -1,8 +1,13 @@
 ---
 import { ButtonDownloadCV } from "../../components/react/DownloadCV";
+import { basics } from "../../../cv.json";
 ---
 
 <section id="inicio" class="flex items-center justify-center w-full pt-14">
+  <div class="grid grid-rows-2 grid-flow-col gap-4 w-[850px] px-5">
+    <div class="col-span-2 flex flex-col items-start gap-5">
+      <span class="text-white font-bold text-3xl">{basics.name}</span>
+
   <div class="grid grid-rows-3 grid-cols-2 gap-4 w-[850px] px-5">
     <div class="col-span-2 row-span-3 md:col-start-3">
       <img
@@ -19,11 +24,15 @@ import { ButtonDownloadCV } from "../../components/react/DownloadCV";
     </div>
     <div class="row-span-3 col-span-3 md:row-start-2 md:col-span-2">
       <p class="text-white">
-        Con más de dos años de experiencia como desarrollador web y backend,
-        incluyendo un año como freelancer, tengo una sólida comprensión del
-        panorama tecnológico en constante evolución. Apasionado por la
-        tecnología.
+        {basics.summary}
       </p>
+    </div>
+    <div class="row-span-2">
+      <img
+        class="rounded-full hidden md:block"
+        src={"/static/images/me.webp"}
+        alt={basics.name}
+      />
     </div>
   </div>
 </section>

@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { useState, type MouseEvent, useCallback } from "react";
-import type { CardInterface } from "../../interfaces/CardExpirience.interface";
+import type { CardInterface } from "../../interfaces/CardExperience.interface";
+import Tag from "./Tag";
 
 function throttle<T extends (...args: any[]) => any>(
   func: T,
@@ -60,6 +61,25 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
           transition: "all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s",
         }}
       >
+        {imageURL || yearExperience ? (
+          <div className="col-start-1 col-end-3">
+            {imageURL ? (
+              <img
+                className="rounded-md lg:w-48 xl:w-32"
+                src={imageURL}
+                alt="Site Image"
+              />
+            ) : (
+              <span className="font-medium text-gray-500">
+                {yearExperience}
+              </span>
+            )}
+          </div>
+        ) : null}
+        <div
+          className={`${!imageURL && !yearExperience ? "col-start-1" : "col-start-3"} col-end-13 flex flex-col pl-3 xl:pl-3`}
+        >
+
         {/* Imagen o año de experiencia */}
         <div className="order-1 col-start-1 col-end-13 row-start-1">
           <span className="font-medium text-gray-500">{yearExperience}</span>
@@ -95,13 +115,11 @@ export const CardExperienceComponnent: React.FC<CardInterface> = ({
               {// eslint-disable-next-line @typescript-eslint/no-unused-vars
               skills?.map((skill) => {
                 return (
-                  <span
-                    key={skill.id}
-                    className=" me-2 flex items-center justify-center gap-2 rounded bg-blue-100 px-2.5 py-0.5 text-sm font-medium text-blue-800 dark:bg-blue-900 dark:text-blue-300"
-                  >
-                    <img className="h-4" src={skill.skillIcon} alt="" />
-                    {skill.skill}
-                  </span>
+                  <Tag
+                    key={skill.skill}
+                    tag={skill.skill}
+                    iconKey={skill.skill}
+                  ></Tag>
                 );
               })}
             </div>

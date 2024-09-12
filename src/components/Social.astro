@@ -1,3 +1,36 @@
+---
+import MasterIcon from "./icons/Master.astro";
+
+import { basics } from "../../cv.json";
+const { profiles } = basics;
+
+const validProfiles = ["github", "linkedin", "instagram", "email"];
+
+const filterProfiles = profiles.filter((p) =>
+  validProfiles.includes(p.network.toLowerCase().trim())
+);
+---
+
+<div
+  class="group w-[40px] fixed bottom-0 left-10 right-auto z-[10] flex-col justify-center lg:block"
+>
+  <ul class="lista-social">
+    {
+      filterProfiles.map((p) => (
+        <li class="flex items-center justify-center">
+          <a
+            class="p-[10px]"
+            href={p.url}
+            aria-label={p.network}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <MasterIcon type={p.network.toLowerCase().trim() as any} />
+          </a>
+        </li>
+      ))
+    }
+
 <!-- class="group w-[40px] fixed bottom-0 left-10 right-auto z-[10] flex flex-col justify-center lg:block" --><!-- class="group w-full bottom-0 left-10 right-auto z-[10] lg:w-[40px] lg:block lg:flex-col lg:justify-center" -->
 <div class="group">
   <!-- <ul class="lista-social flex justify-center items-center gap-8"> -->
