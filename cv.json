@@ -4,38 +4,36 @@
     "label": "Ingeniero de Software con más de 2 años de experiencia",
     "email": "df.quintanillah@gmail.com",
     "phone": "+504  31433099",
-    "url": "https://crywhat.site/",
+    "url": "",
     "summary": "Con más de dos años de experiencia como desarrollador web y backend, incluyendo un año como freelancer, tengo una sólida comprensión del panorama tecnológico en constante evolución. Apasionado por la tecnología.",
     "location": {
-      "address": "https://maps.app.goo.gl/ZhXbcW6AKNwGrugKA",
-      "postalCode": "11101",
-      "city": "Tegucigalpa",
+      "address": "https://maps.app.goo.gl/EPuFrrn771t94kAE9",
+      "postalCode": "21104",
+      "city": "San Pedro Sula",
       "countryCode": "HN",
       "region": "Honduras"
     },
     "profiles": [
       {
         "network": "GitHub",
-        "username": "crywhat",
+        "username": "df962",
         "url": "https://github.com/fq962"
       },
       {
         "network": "LinkedIn",
         "username": "fernando-quintanilla",
-        "url": ""
+        "url": "https://www.linkedin.com/in/fernando-quintanilla-6349951a0/"
       },
       {
         "network": "Instagram",
         "username": "df.quintanillah",
-        "url": ""
+        "url": "https://www.instagram.com/df.quintanillah"
       },
       {
         "network": "email",
         "username": "df.quintanillah@gmail.com",
-        "url": "="
+        "url": ""
       }
-      
-      
     ]
   },
   "work": [
@@ -63,7 +61,7 @@
     {
       "name": "Freelancer",
       "position": "Freelancer",
-      "url": "https://www.facebook.com/servicentrowillyhn",
+      "url": "",
       "startDate": "2024-07-01",
       "endDate": null,
       "summary": "Como freelancer, desarrollé tres aplicaciones web de tipo Single Page Application (SPA) para clientes en diferentes industrias. Estos proyectos incluyeron la creación de sitios web para Fitech, Dr. Will Fernández Cirujano, e iBroom Cleaning. En estos proyectos, utilicé WordPress como la plataforma principal, aprovechando el plugin Elementor para la construcción de interfaces, junto con HTML y CSS para personalizar y optimizar la experiencia del usuario. Estas aplicaciones web fueron diseñadas para ser altamente funcionales y fáciles de navegar, cumpliendo con las necesidades específicas de cada cliente y demostrando mi capacidad para manejar proyectos de principio a fin en entornos freelance.",
@@ -77,10 +75,10 @@
       "url": "https://ceutec.hn/",
       "area": "Ingeniero en Sistemas",
       "studyType": "Ingeniería",
-      "startDate": "2021-01-01",
+      "startDate": null,
       "endDate": null,
       "score": "5.0",
-      "courses": ["CPP", "Java", "PHP", "MySQL"]
+      "courses": ["C++", "C#", "Java", "MySQL", "Angular", "Flutter"]
     }
   ],
   "awards": [],
@@ -90,42 +88,6 @@
       "date": "2023-03-01",
       "issuer": "Udemy Business",
       "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-3f6dde7d-fbe3-48b7-bba3-dc19a45ff74c.jpg?v=1677678612000"
-    },
-    {
-      "name": "NestJS: The Complete Developer's Guide",
-      "date": "2023-07-08",
-      "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-f99765ea-1d0b-4210-9dda-303f7fb840e2.jpg?v=1688828179000"
-    },
-    {
-      "name": "Understanding TypeScript",
-      "date": "2022-10-22",
-      "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-914531bb-818a-4361-a179-f13ad8cbea13.jpg?v=1666498602000"
-    },
-    {
-      "name": "Learn SQL Using PostgreSQL: From Zero to Hero",
-      "date": "2022-09-20",
-      "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-148665fb-db08-4a3e-b711-b26f3fa4264c.jpg?v=1663729227000"
-    },
-    {
-      "name": "Complete C# Masterclass",
-      "date": "2023-11-13",
-      "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-111c9a87-090f-4c78-8e06-c514c26213db.jpg?v=1699892909000"
-    },
-    {
-      "name": "Modern JavaScript (Complete guide, from Novice to Ninja)",
-      "date": "2022-10-09",
-      "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-07e32514-6598-444c-bfc6-c4c096c8d03b.jpg?v=1665334084000"
-    },
-    {
-      "name": "Node.js, Express, MongoDB & More: The Complete Bootcamp 2024",
-      "date": "2023-01-07",
-      "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-b02a2fa0-4ff6-4116-b936-f15ee27556e2.jpg?v=1673101018000"
     }
   ],
   "publications": [],
