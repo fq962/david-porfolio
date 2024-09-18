@@ -41,7 +41,7 @@
       "name": "Allas Repuestos",
       "position": "Ingeniero de Software",
       "url": "https://allasrepuestos.store/",
-      "startDate": "2021-05-05",
+      "startDate": "2021-10-01",
       "endDate": null,
       "summary": "Soy desarrollador de software con experiencia en múltiples tecnologías de frontend, backend, base de datos y desarrollo móvil. Actualmente, desempeño el rol de líder de equipo, donde me encargo de analizar y definir los requerimientos de software de nuestros clientes, garantizando que las soluciones desarrolladas cumplan con sus necesidades. Además, gestiono un equipo de desarrollo, coordinando la ejecución de los proyectos desde su planificación hasta su implementación final, asegurando la calidad y eficiencia en cada etapa del proceso.",
       "highlights": [
@@ -52,10 +52,10 @@
         "Jenkins",
         "Flutter",
         "PM2",
-        "SCRUM",
-        "JIRA",
-        "GIT",
-        "BITBUCKET"
+        "Metodología Scrum",
+        "Jira",
+        "Git",
+        "Bitbucket"
       ]
     },
     {
@@ -85,9 +85,39 @@
   "certificates": [
     {
       "name": "Angular - The Complete Guide (2024 Edition)",
-      "date": "2023-03-01",
+      "date": "2023-04-28",
       "issuer": "Udemy Business",
-      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-3f6dde7d-fbe3-48b7-bba3-dc19a45ff74c.jpg?v=1677678612000"
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-1e6f4e18-e69d-467a-9e96-8b7f6a836739.jpg"
+    },
+    {
+      "name": "NestJS: The Complete Developer's Guide",
+      "date": "2022-10-09",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-4dfdddc2-2747-4658-a68b-31af5e668800.jpg"
+    },
+    {
+      "name": "Flutter & Dart - The Complete Guide",
+      "date": "2023-05-10",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-4723464e-7e88-470e-84f7-f4a8be1e8edd.jpg"
+    },
+    {
+      "name": "Agile Fundamentals: Including Scrum & Kanban",
+      "date": "2023-02-10",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-181ce9eb-3b6f-4f2f-bf00-46911ffa0bde.jpg"
+    },
+    {
+      "name": "SQL and PostgreSQL: The Complete Developer's Guide",
+      "date": "2023-01-17",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-06b6396b-0a40-46d3-bb22-6802d5997291.jpg"
+    },
+    {
+      "name": "The Git & Github Bootcamp",
+      "date": "2023-01-23",
+      "issuer": "Udemy Business",
+      "url": "https://udemy-certificate.s3.amazonaws.com/image/UC-2068586b-5188-4e4b-8f90-812c1e6c16fa.jpg"
     }
   ],
   "publications": [],
@@ -198,28 +228,40 @@
     },
     {
       "language": "Inglés",
-      "fluency": "B1"
+      "fluency": "Intermedio"
     }
   ],
   "interests": [
     {
-      "name": "Ajedrez",
+      "name": "Video Juegos",
       "keywords": [
         "Estrategia",
-        "Juego de Mesa",
-        "Competición",
-        "Desarrollo Personal"
+        "videojuegos",
+        "esports",
+        "gaming"
       ]
     }
   ],
   "references": [
     {
-      "name": "Heberth Elvir",
-      "reference": "Gerente de Operaciones en COPECO - (+504 3329-2869)"
+      "name": "Jesus Noriega",
+      "reference": "Ingeniero de Software",
+      "phoneNumber": "+504 9470-1907"
     },
     {
-      "name": "Fernando Quintanilla",
-      "reference": "Ingeniero de Software en Allas Repuestos - (+504 3143-3099)"
+      "name": "Daniel Ochoa",
+      "reference": "Licenciado en Mercadotecnia y Negocios Internacionales",
+      "phoneNumber": "+504 9954-9018"
+    },
+    {
+      "name": "Milton Barrientos",
+      "reference": "Ingeniero en Informática",
+      "phoneNumber": "+504 8828-5038"
+    },
+    {
+      "name": "Luisa Espinoza",
+      "reference": "Ingeniero Industrial y Sistemas",
+      "phoneNumber": "+504 9709-7970"
     }
   ],
   "projects": [
@@ -228,7 +270,7 @@
       "isActive": true,
       "description": "Decidí expandir mis conocimientos en desarrollo web aprendiendo React. Desarrollé un proyecto personal llamado Fermodoro, una aplicación de temporizador Pomodoro inspirada en \"pomodoro.io\". Este proyecto no solo me permitió entender los conceptos fundamentales de React, sino que también me dio la oportunidad de trabajar con Tailwind. Al desarrollar Fermodoro, pude consolidar mis habilidades en la creación de interfaces de usuario dinámicas y en la utilización de estilos personalizados, lo que me ha preparado para enfrentar desafíos más complejos en el desarrollo frontend.",
       "highlights": ["React", "Typescript", "Tailwind"],
-      "url": "https://abysshn.shop/"
+      "url": "https://fermodoro.site/"
     }
   ]
 }

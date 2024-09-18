@@ -3,14 +3,9 @@ import React from "react";
 export const ButtonDownloadCV: React.FC = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "static/cv/cv.pdf";
-    link.download = "cv.pdf";
+    link.href = "static/cv/DavidQuintanilla_CV.pdf";
+    link.download = "DavidQuintanilla_CV.pdf";
     link.click();
-  };
-
-  const scrollToSection = () => {
-    const section = document.getElementById("section");
-    section?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
