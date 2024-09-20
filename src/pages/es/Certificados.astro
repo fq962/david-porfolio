@@ -1,8 +1,17 @@
 ---
 import { CardCertificadoComponnent } from "../../components/react/CardCertificado";
+
+import { certificates } from "../../../cv.json";
 ---
 
-<section class="flex items-center flex-col justify-center w-full gap-5 pt-14">
+<!-- <section
+  id="certificados"
+  class="flex items-center flex-col justify-center w-full gap-5 pt-14 pb-14"
+> -->
+<section
+  id="certificados"
+  class="flex items-center flex-col justify-center w-full gap-5 pt-14"
+>
   <div
     class="flex
         justify-start
@@ -18,47 +27,16 @@ import { CardCertificadoComponnent } from "../../components/react/CardCertificad
         grid-cols-1
         sm:grid-cols-2
         gap-6">
-    <CardCertificadoComponnent
-      titulo="Angular - The Complete Guide (2024 Edition)"
-      fechaCertificado="2023-04-28"
-      institucion="Udemy Business"
-      certificadoURL="https://udemy-certificate.s3.amazonaws.com/image/UC-1e6f4e18-e69d-467a-9e96-8b7f6a836739.jpg"
-      client:load
-    />
-    <CardCertificadoComponnent
-      titulo=`NestJS: The Complete Developer's Guide`
-      fechaCertificado="2022-10-09"
-      institucion="Udemy Business"
-      certificadoURL="https://udemy-certificate.s3.amazonaws.com/image/UC-4dfdddc2-2747-4658-a68b-31af5e668800.jpg"
-      client:load
-    />
-    <CardCertificadoComponnent
-      titulo="Flutter & Dart - The Complete Guide"
-      fechaCertificado="2023-05-10"
-      institucion="Udemy Business"
-      certificadoURL="https://udemy-certificate.s3.amazonaws.com/image/UC-4723464e-7e88-470e-84f7-f4a8be1e8edd.jpg"
-      client:load
-    />
-    <CardCertificadoComponnent
-      titulo="Agile Fundamentals: Including Scrum & Kanban"
-      fechaCertificado="2023-02-10"
-      institucion="Udemy Business"
-      certificadoURL="https://udemy-certificate.s3.amazonaws.com/image/UC-181ce9eb-3b6f-4f2f-bf00-46911ffa0bde.jpg"
-      client:load
-    />
-    <CardCertificadoComponnent
-      titulo="SQL and PostgreSQL: The Complete Developer's Guide"
-      fechaCertificado="2023-01-17"
-      institucion="Udemy Business"
-      certificadoURL="https://udemy-certificate.s3.amazonaws.com/image/UC-06b6396b-0a40-46d3-bb22-6802d5997291.jpg"
-      client:load
-    />
-    <CardCertificadoComponnent
-      titulo="The Git & Github Bootcamp"
-      fechaCertificado="2023-01-23"
-      institucion="Udemy Business"
-      certificadoURL="https://udemy-certificate.s3.amazonaws.com/image/UC-2068586b-5188-4e4b-8f90-812c1e6c16fa.jpg"
-      client:load
-    />
+    {
+      certificates.map((c) => (
+        <CardCertificadoComponnent
+          titulo={c.name}
+          fechaCertificado={c.date}
+          institucion={c.issuer}
+          certificadoURL={c.url}
+          client:load
+        />
+      ))
+    }
   </div>
 </section>

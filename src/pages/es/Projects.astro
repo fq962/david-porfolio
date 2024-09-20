@@ -1,40 +1,29 @@
 ---
 import { CardExperienceComponnent } from "../../components/react/CardExperience";
-
-const description = `Decidí expandir mis conocimientos en desarrollo web aprendiendo React. Desarrollé un proyecto personal llamado Fermodoro, una aplicación de temporizador Pomodoro inspirada en "pomodoro.io". Este proyecto no solo me permitió entender los conceptos fundamentales de React, sino que también me dio la oportunidad de trabajar con Tailwind. Al desarrollar Fermodoro, pude consolidar mis habilidades en la creación de interfaces de usuario dinámicas y en la utilización de estilos personalizados, lo que me ha preparado para enfrentar desafíos más complejos en el desarrollo frontend.`;
-const imageURL = "/static/images/fermodoroPage.png";
+import { projects } from "../../../cv.json";
 ---
 
 <section
   id="proyectos"
   class="flex items-center flex-col justify-center w-full gap-5 pt-14"
 >
-  <!-- <CardExperience /> -->
-  <!-- <div class="w-[850px] flex justify-start items-center p-1"> -->
   <div
     class="flex justify-start items-center p-1 sm:w-full sm:pl-4 md:w-[850px]"
   >
     <label for="" class="text-white font-semibold text-2xl">Proyectos</label>
   </div>
-  <CardExperienceComponnent
-    title="FERMODORO APP"
-    description={description}
-    pageURL="https://fermodoro.site/"
-    imageURL={imageURL}
-    skills={[
-      { id: 1, skill: "React", skillIcon: "/static/icons/react-icon.webp" },
-      {
-        id: 2,
-        skill: "TypeScript",
-        skillIcon: "/static/icons/typescript-icon.webp",
-      },
-      {
-        id: 3,
-        skill: "Tailwind",
-        skillIcon: "/static/icons/tailwind-icon.webp",
-      },
-    ]}
-    ,
-    client:load
-  />
+  {
+    projects.map((p) => (
+      <CardExperienceComponnent
+        title={p.name}
+        description={p.description}
+        pageURL={p.url ?? ""}
+        skills={p.highlights.map((t) => ({
+          skill: t,
+          skillIcon: `static/icons/${t.toLowerCase().trim()}`,
+        }))}
+        client:load
+      />
+    ))
+  }
 </section>

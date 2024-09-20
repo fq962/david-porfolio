@@ -1,6 +1,6 @@
 ---
-import { CardCertificadoComponnent } from "../../components/react/CardCertificado";
 import { CardReferenciasComponnent } from "../../components/react/CardReferencias";
+import { references } from "../../../cv.json";
 ---
 
 <section
@@ -21,7 +21,18 @@ import { CardReferenciasComponnent } from "../../components/react/CardReferencia
         grid-cols-1
         sm:grid-cols-2
         gap-6">
-    <CardReferenciasComponnent
+    {
+      references.map((r, index) => (
+        <CardReferenciasComponnent
+          id={index}
+          nombreReferencia={r.name}
+          carreraReferencia={r.reference}
+          numeroTelefono={r.phoneNumber}
+          client:load
+        />
+      ))
+    }
+    <!-- <CardReferenciasComponnent
       id={1}
       nombreReferencia="Daniel Ochoa"
       carreraReferencia="Licenciado en Mercadotecnia y Negocios Internacionales"
@@ -41,6 +52,6 @@ import { CardReferenciasComponnent } from "../../components/react/CardReferencia
       carreraReferencia="Ingeniero en Telecomunicaciones"
       numeroTelefono="+504 9906-9506"
       client:load
-    />
+    /> -->
   </div>
 </section>

@@ -1,0 +1,34 @@
+---
+import { education } from "../../../cv.json";
+import { CardExperienceComponnent } from "../../components/react/CardExperience";
+---
+
+<section
+  id="educacion"
+  class="flex items-center flex-col justify-center w-full gap-5 pt-14 pb-14"
+>
+  <div
+    class="flex
+        justify-start
+        items-center
+        p-1
+        sm:w-full
+        sm:pl-4
+        md:w-[850px]"
+  >
+    <label for="" class="text-white font-semibold text-2xl">Educación</label>
+  </div>
+  {
+    education.map((p) => (
+      <CardExperienceComponnent
+        title={p.area}
+        description={p.institution}
+        pageURL={p.url ?? "#"}
+        skills={p.courses.map((t) => ({
+          skill: t,
+        }))}
+        client:load
+      />
+    ))
+  }
+</section>
