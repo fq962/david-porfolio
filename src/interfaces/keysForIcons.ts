@@ -28,4 +28,5 @@ export const KEYS_FOR_ICONS = {
   JAVA: `${BASE_PATH}/java.webp`,
   MYSQL: `${BASE_PATH}/mysql.webp`,
   PHP: `${BASE_PATH}/php.webp`,
+  FIGMA: `${BASE_PATH}/figma.webp`,
 };

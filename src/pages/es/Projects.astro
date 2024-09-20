@@ -17,7 +17,7 @@ import { projects } from "../../../cv.json";
       <CardExperienceComponnent
         title={p.name}
         description={p.description}
-        pageURL={p.url ?? "#"}
+        pageURL={p.url ?? ""}
         skills={p.highlights.map((t) => ({
           skill: t,
           skillIcon: `static/icons/${t.toLowerCase().trim()}`,
