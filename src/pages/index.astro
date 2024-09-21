@@ -14,7 +14,7 @@ import Home from "./es/home.astro";
 const title = basics.name + " - " + basics.summary;
 ---
 
-<Layout title={title}>
+<Layout title={title} description={basics.summary}>
   <Home />
 </Layout>
 <Experience />
