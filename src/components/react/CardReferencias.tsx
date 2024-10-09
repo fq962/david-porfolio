@@ -91,7 +91,7 @@ export const CardReferenciasComponnent: React.FC<ReferenciaInterface> = ({
             <span className="me-2 rounded  px-2.5 py-0.5 text-sm font-bold text-blue-800  dark:text-blue-300">
               {carreraReferencia}
             </span>
-            <span className="me-2 rounded px-2.5 py-0.5 text-sm font-medium italic text-blue-800  dark:text-blue-300">
+            <span className="me-2 rounded px-2.5 py-0.5 text-sm font-medium italic text-blue-800  dark:text-blue-300 blur-sm">
               {numeroTelefono}
             </span>
           </div>

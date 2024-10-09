@@ -5,7 +5,7 @@
     "email": "df.quintanillah@gmail.com",
     "phone": "+504  31433099",
     "url": "",
-    "summary": "Con más de dos años de experiencia como desarrollador web y backend, incluyendo un año como freelancer, tengo una sólida comprensión del panorama tecnológico en constante evolución. Apasionado por la tecnología.",
+    "summary": "Con más de 3 años de experiencia como desarrollador web y backend, he tenido la oportunidad de trabajar en una amplia gama de proyectos, desde la creación de aplicaciones web robustas hasta la implementación de soluciones backend escalables. Mi experiencia incluye 1 año mas como freelancer, donde desarrollé soluciones personalizadas para diversos clientes. Soy apasionado por la tecnología y me mantengo en constante actualización, lo que me permite estar al tanto de las últimas tendencias y herramientas tecnológicas para ofrecer siempre soluciones innovadoras y eficientes.",
     "location": {
       "address": "https://maps.app.goo.gl/EPuFrrn771t94kAE9",
       "postalCode": "21104",
@@ -62,7 +62,7 @@
       "name": "Freelancer",
       "position": "Freelancer",
       "url": "",
-      "startDate": "2024-07-01",
+      "startDate": "2020",
       "endDate": null,
       "summary": "Como freelancer, desarrollé tres aplicaciones web de tipo Single Page Application (SPA) para clientes en diferentes industrias. Estos proyectos incluyeron la creación de sitios web para Fitech, Dr. Will Fernández Cirujano, e iBroom Cleaning. En estos proyectos, utilicé WordPress como la plataforma principal, aprovechando el plugin Elementor para la construcción de interfaces, junto con HTML y CSS para personalizar y optimizar la experiencia del usuario. Estas aplicaciones web fueron diseñadas para ser altamente funcionales y fáciles de navegar, cumpliendo con las necesidades específicas de cada cliente y demostrando mi capacidad para manejar proyectos de principio a fin en entornos freelance.",
       "highlights": ["HTML", "CSS", "Wordpress", "Elementor"]
@@ -244,19 +244,9 @@
   ],
   "references": [
     {
-      "name": "Jesus Noriega",
-      "reference": "Ingeniero de Software",
-      "phoneNumber": "+504 9470-1907"
-    },
-    {
       "name": "Daniel Ochoa",
       "reference": "Licenciado en Mercadotecnia y Negocios Internacionales",
       "phoneNumber": "+504 9954-9018"
-    },
-    {
-      "name": "Milton Barrientos",
-      "reference": "Ingeniero en Informática",
-      "phoneNumber": "+504 8828-5038"
     },
     {
       "name": "Luisa Espinoza",
@@ -266,6 +256,13 @@
   ],
   "projects": [
     {
+      "name": "Find Your Prices",
+      "isActive": true,
+      "description": "Desarrollé un proyecto en colaboración con un compañero donde realizamos scraping a varias páginas web de productos en Honduras. Tras obtener la información, la sanitizamos y la integramos en nuestra plataforma, permitiendo a los usuarios buscar cualquier producto de manera sencilla. El objetivo es que puedan visualizar rápidamente qué tiendas tienen el producto disponible y a qué precio. Actualmente, nuestra plataforma incluye datos de dos tiendas, pero estamos en proceso de agregar más para ampliar las opciones de búsqueda y precios.",
+      "highlights": ["React", "Typescript", "Tailwind", "NestJS", "PostgreSQL", "Web Scrapping", "Zustand"],
+      "url": "https://findyourprices.com/"
+    },
+    {
       "name": "Fermodoro",
       "isActive": true,
       "description": "Decidí expandir mis conocimientos en desarrollo web aprendiendo React. Desarrollé un proyecto personal llamado Fermodoro, una aplicación de temporizador Pomodoro inspirada en \"pomodoro.io\". Este proyecto no solo me permitió entender los conceptos fundamentales de React, sino que también me dio la oportunidad de trabajar con Tailwind. Al desarrollar Fermodoro, pude consolidar mis habilidades en la creación de interfaces de usuario dinámicas y en la utilización de estilos personalizados, lo que me ha preparado para enfrentar desafíos más complejos en el desarrollo frontend.",
@@ -273,17 +270,17 @@
       "url": "https://fermodoro.site/"
     },
     {
-      "name": "Handhelds App",
-      "isActive": true,
-      "description": "Participé como desarrollador principal, utilizando Flutter y Dart para crear una aplicación destinada a dispositivos handheld. El objetivo del sistema fue optimizar la gestión en centros de distribución, permitiendo a los empleados escanear productos, realizar requisiciones entre sucursales, controlar el inventario, y ordenar productos en estantes. Además, la aplicación facilitó el proceso de préstamos internos de productos a los vendedores y la recepción de nueva mercancía, mejorando así la eficiencia en las operaciones logísticas.",
-      "highlights": ["PostgreSQL", "Flutter", "Bitbucket", "Metodología Scrum", "Typescript"],
-      "url": null
-    },
-    {
       "name": "Reclutamiento y Bolsa de Empleo",
       "isActive": true,
       "description": "Desempeñando un rol de líder de proyecto, encargado de reunirme con el cliente y levantar los requerimientos de usuario. Desarrollé el prototipo en Figma y definí los requerimientos técnicos. Una vez aprobado el diseño, también participé como desarrollador en varias partes del sistema. El objetivo fue digitalizar los documentos y procesos de contratación, desde la solicitud de empleo hasta la creación del expediente digital del candidato. Además, implementamos una bolsa de empleo en la que personas externas pueden aplicar a las vacantes disponibles de la empresa.",
       "highlights": ["PostgreSQL", "Angular", "NestJS", "Figma", "Jenkins", "Metodología Scrum", "Jira", "Bitbucket"],
+      "url": "https://allasrepuestos.com/bolsa_de_empleo.html"
+    },
+    {
+      "name": "Handhelds App",
+      "isActive": true,
+      "description": "Participé como desarrollador principal, utilizando Flutter y Dart para crear una aplicación destinada a dispositivos handheld. El objetivo del sistema fue optimizar la gestión en centros de distribución, permitiendo a los empleados escanear productos, realizar requisiciones entre sucursales, controlar el inventario, y ordenar productos en estantes. Además, la aplicación facilitó el proceso de préstamos internos de productos a los vendedores y la recepción de nueva mercancía, mejorando así la eficiencia en las operaciones logísticas.",
+      "highlights": ["PostgreSQL", "Flutter", "Bitbucket", "Metodología Scrum", "Typescript"],
       "url": null
     },
     {
