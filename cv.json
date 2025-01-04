@@ -138,6 +138,11 @@
       "keywords": []
     },
     {
+      "name": "Next.js",
+      "level": "Intermedio",
+      "keywords": ["Desarrollo Web", "Frontend"]
+    },
+    {
       "name": "NodeJS",
       "level": "Avanzado",
       "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
@@ -256,8 +261,15 @@
   ],
   "projects": [
     {
-      "name": "Find Your Prices",
+      "name": "Palette Wizard",
       "isActive": true,
+      "description": "Desarrollé esta aplicación en colaboración con un compañero. Palette Wizard utiliza inteligencia artificial para generar paletas de colores personalizadas. Los usuarios pueden ingresar una idea, un color base o cualquier concepto, y la herramienta creará una paleta única junto con sus tonos (shades). El objetivo principal es inspirar y facilitar a diseñadores y creativos en su trabajo visual.",
+      "highlights": ["React", "Next.js", "Typescript", "Tailwind", "OpenAI"],
+      "url": "https://palette-wizard.vercel.app/"
+    },    
+    {
+      "name": "Find Your Prices",
+      "isActive": false,
       "description": "Desarrollé un proyecto en colaboración con un compañero donde realizamos scraping a varias páginas web de productos en Honduras. Tras obtener la información, la sanitizamos y la integramos en nuestra plataforma, permitiendo a los usuarios buscar cualquier producto de manera sencilla. El objetivo es que puedan visualizar rápidamente qué tiendas tienen el producto disponible y a qué precio. Actualmente, nuestra plataforma incluye datos de dos tiendas, pero estamos en proceso de agregar más para ampliar las opciones de búsqueda y precios.",
       "highlights": ["React", "Typescript", "Tailwind", "NestJS", "PostgreSQL", "Web Scrapping", "Zustand"],
       "url": "https://findyourprices.com/"

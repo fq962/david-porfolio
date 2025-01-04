@@ -29,4 +29,6 @@ export const KEYS_FOR_ICONS = {
   MYSQL: `${BASE_PATH}/mysql.webp`,
   PHP: `${BASE_PATH}/php.webp`,
   FIGMA: `${BASE_PATH}/figma.webp`,
+  NEXTJS: `${BASE_PATH}/nextjs.webp`,
+  OPENAI: `${BASE_PATH}/openai.webp`,
 };
