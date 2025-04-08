@@ -5,7 +5,7 @@
     "email": "df.quintanillah@gmail.com",
     "phone": "+504  31433099",
     "url": "",
-    "summary": "Con más de 3 años de experiencia como desarrollador web y backend, he tenido la oportunidad de trabajar en una amplia gama de proyectos, desde la creación de aplicaciones web robustas hasta la implementación de soluciones backend escalables. Mi experiencia incluye 1 año mas como freelancer, donde desarrollé soluciones personalizadas para diversos clientes. Soy apasionado por la tecnología y me mantengo en constante actualización, lo que me permite estar al tanto de las últimas tendencias y herramientas tecnológicas para ofrecer siempre soluciones innovadoras y eficientes.",
+    "summary": "Con más de 4 años de experiencia como desarrollador web y backend, he trabajado en una amplia variedad de proyectos, desde la creación de aplicaciones web robustas hasta la implementación de soluciones backend escalables. Me apasiona la tecnología y actualizo constantemente mis habilidades, lo que me permite mantenerme a la vanguardia de las últimas tendencias y herramientas para ofrecer soluciones innovadoras y eficientes de forma constante.",
     "location": {
       "address": "https://maps.app.goo.gl/EPuFrrn771t94kAE9",
       "postalCode": "21104",
@@ -272,7 +272,7 @@
       "isActive": false,
       "description": "Desarrollé un proyecto en colaboración con un compañero donde realizamos scraping a varias páginas web de productos en Honduras. Tras obtener la información, la sanitizamos y la integramos en nuestra plataforma, permitiendo a los usuarios buscar cualquier producto de manera sencilla. El objetivo es que puedan visualizar rápidamente qué tiendas tienen el producto disponible y a qué precio. Actualmente, nuestra plataforma incluye datos de dos tiendas, pero estamos en proceso de agregar más para ampliar las opciones de búsqueda y precios.",
       "highlights": ["React", "Typescript", "Tailwind", "NestJS", "PostgreSQL", "Web Scrapping", "Zustand"],
-      "url": "https://findyourprices.com/"
+      "url": null
     },
     {
       "name": "Fermodoro",

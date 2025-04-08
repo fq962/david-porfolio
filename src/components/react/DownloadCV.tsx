@@ -3,8 +3,8 @@ import React from "react";
 export const ButtonDownloadCV: React.FC = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "static/cv/DavidQuintanilla_CV.pdf";
-    link.download = "DavidQuintanilla_CV.pdf";
+    link.href = "static/cv/Fernando Quintanilla - Resume.pdf";
+    link.download = "Fernando Quintanilla - Resume.pdf";
     link.click();
   };
 
